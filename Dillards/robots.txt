@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Allow all search engines to crawl the case study
+Disallow: /Assets/
+Disallow: /*.git
+
+# Sitemap location
+Sitemap: https://casestudies.advertflair.com/Dillards/sitemap.xml
+
+# Crawl delay to be respectful to servers
+Crawl-delay: 1
