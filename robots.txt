@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Case Studies
+Allow: /Dillards/
+Allow: /Crozier/
+Allow: /DHEN/
+
+# Assets
+Allow: /Assets/
+
+Sitemap: https://casestudies.advertflair.com/sitemap.xml

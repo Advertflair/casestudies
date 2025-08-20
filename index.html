@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Studies - AdvertFlair AI Solutions</title>
+    <link rel="icon" href="/DHEN/Assets/images/favicon_adv.ico" type="image/x-icon">
+    <link rel="icon" href="/DHEN/Assets/images/favicon_adv.png" type="image/png">
+    <link rel="icon" href="/DHEN/Assets/images/favicon_adv.svg" type="image/svg+xml">
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+            color: #1e293b;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #4934bc 0%, #3a2a9a 100%);
+        }
+        .text-gradient {
+            background: linear-gradient(90deg, #fe2267, #ff9e02);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        .metric-counter {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="bg-white fixed top-0 left-0 right-0 z-50 shadow-sm">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <img src="https://cdn.prod.website-files.com/6336da2704c4776a047e9529/6336da2704c47740ce7e9542_image%201.webp" alt="Advertflair Logo" class="h-10 w-auto">
+                </div>
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#overview" class="text-slate-600 hover:text-[#4934bc] transition-colors">Overview</a>
+                    <a href="#case-studies" class="text-slate-600 hover:text-[#4934bc] transition-colors">Case Studies</a>
+                    <a href="#results" class="text-slate-600 hover:text-[#4934bc] transition-colors">Results</a>
+                </nav>
+                <a href="#contact" class="hidden md:inline-block bg-[#4934bc] text-white font-semibold px-5 py-2 rounded-lg hover:bg-[#3a2a9a] transition-all duration-300 transform hover:scale-105">
+                    Let's Talk
+                </a>
+                <button id="mobile-menu-button" class="md:hidden text-slate-800">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white px-6 pb-4">
+            <a href="#overview" class="block py-2 text-slate-600 hover:text-[#4934bc]">Overview</a>
+            <a href="#case-studies" class="block py-2 text-slate-600 hover:text-[#4934bc]">Case Studies</a>
+            <a href="#results" class="block py-2 text-slate-600 hover:text-[#4934bc]">Results</a>
+            <a href="#contact" class="block mt-4 w-full text-center bg-[#4934bc] text-white font-semibold px-5 py-2 rounded-lg hover:bg-[#3a2a9a]">Let's Talk</a>
+        </div>
+    </header>
+
+  <!-- Hero Section -->
+<section class="gradient-bg text-white pt-32 pb-20">
+    <div class="container mx-auto px-6 text-center">
+        <span class="text-sm font-bold uppercase tracking-widest text-white/70">Portfolio Showcase</span>
+        <h1 class="text-4xl md:text-6xl font-extrabold mt-4 mb-6 leading-tight">
+            Real Results, Real Clients, <span class="text-gradient bg-gradient-to-r from-[#fe2267] to-[#ff9e02] bg-clip-text text-transparent">Real ROI</span>
+        </h1>
+        <p class="max-w-3xl mx-auto text-lg md:text-xl text-white/80 mb-12">
+            See how leading companies across fashion, art logistics, and manufacturing are transforming their visual content and business outcomes with our AI-powered solutions.
+        </p>
+        <div class="flex justify-center space-x-4">
+            <a href="#case-studies" class="bg-[#fe2267] text-white font-bold px-8 py-4 rounded-lg hover:bg-[#e01b58] transition-all duration-300 transform hover:scale-105">
+                Explore Case Studies
+            </a>
+            <a href="#contact" class="bg-white/20 text-white font-bold px-8 py-4 rounded-lg hover:bg-white/30 transition-all duration-300">
+                Request Demo
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Portfolio Impact Bar -->
+<section class="bg-white py-8 shadow-md -mt-10 relative z-10 mx-4 md:mx-auto max-w-6xl rounded-xl">
+    <div class="container mx-auto px-6">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div class="flex flex-col items-center">
+                <i data-lucide="target" class="w-8 h-8 mb-2 text-[#fe2267]"></i>
+                <h3 class="font-bold text-slate-500 text-sm uppercase">Accuracy</h3>
+                <p class="text-lg font-semibold text-slate-800">98% AI Texture</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <i data-lucide="zap" class="w-8 h-8 mb-2 text-[#ff9e02]"></i>
+                <h3 class="font-bold text-slate-500 text-sm uppercase">Speed</h3>
+                <p class="text-lg font-semibold text-slate-800">10x Faster</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <i data-lucide="trending-up" class="w-8 h-8 mb-2 text-[#4934bc]"></i>
+                <h3 class="font-bold text-slate-500 text-sm uppercase">Engagement</h3>
+                <p class="text-lg font-semibold text-slate-800">3x Performance</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <i data-lucide="trending-down" class="w-8 h-8 mb-2 text-green-600"></i>
+                <h3 class="font-bold text-slate-500 text-sm uppercase">Cost</h3>
+                <p class="text-lg font-semibold text-slate-800">1/3 Traditional</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Case Studies Grid -->
+<section id="case-studies" class="py-20 bg-slate-50">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Featured Case Studies</h2>
+            <p class="text-lg text-slate-600">Deep dive into how our solutions transformed these businesses across different industries</p>
+        </div>
+
+        <div class="grid lg:grid-cols-3 gap-8">
+            
+            <!-- Dillards Case Study -->
+            <div class="card-hover bg-white rounded-2xl shadow-lg overflow-hidden border border-slate-200/50">
+                <div class="h-48 relative overflow-hidden">
+                    <!-- Background Image -->
+                    <img src="/Dillards/Assets/images/Option-1.webp" alt="Dillards Fashion Background" class="absolute inset-0 w-full h-full object-cover">
+                    <!-- Gradient Overlay -->
+                    <div class="absolute inset-0 bg-gradient-to-br from-[#4934bc]/90 to-[#3a2a9a]/90"></div>
+                    <!-- Content -->
+                    <div class="relative text-white text-center z-10 flex items-center justify-center h-full">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-2">Dillards</h3>
+                            <span class="px-3 py-1 bg-white/20 rounded-full text-sm">Fashion & E-commerce</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="mb-4">
+                        <div class="flex items-center space-x-4 mb-3">
+                            <div class="bg-[#4934bc]/10 p-2 rounded-lg">
+                                <i data-lucide="camera" class="w-5 h-5 text-[#4934bc]"></i>
+                            </div>
+                            <span class="text-sm font-semibold text-[#4934bc]">Photo Agency Replacement</span>
+                        </div>
+                        <p class="text-slate-600 text-sm mb-4">
+                            <strong>Challenge:</strong> Major department store needed scalable model photography for thousands of products without expensive photo shoots.
+                        </p>
+                        <p class="text-slate-600 text-sm mb-4">
+                            <strong>Solution:</strong> Custom Glam AI and Style AI platforms delivering photo-agency quality with 98% texture accuracy at 1/3rd the cost.
+                        </p>
+                    </div>
+                    <div class="border-t pt-4">
+                        <div class="grid grid-cols-2 gap-4 mb-4">
+                            <div class="text-center">
+                                <div class="text-lg font-bold text-[#fe2267]">98%</div>
+                                <div class="text-xs text-slate-500">Texture Accuracy</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-lg font-bold text-[#ff9e02]">10x</div>
+                                <div class="text-xs text-slate-500">Faster Turnaround</div>
+                            </div>
+                        </div>
+                        <a href="https://casestudies.advertflair.com/Dillards/" 
+                           class="block w-full text-center bg-[#4934bc] text-white py-3 rounded-lg font-semibold hover:bg-[#3a2a9a] transition-all duration-300">
+                            Read Full Case Study
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Crozier Case Study -->
+            <div class="card-hover bg-white rounded-2xl shadow-lg overflow-hidden border border-slate-200/50">
+                <div class="h-48 relative overflow-hidden">
+                    <!-- Background Image -->
+                    <img src="/Crozier/Assets/images/Crate_after.webp" alt="Crozier Art Storage Background" class="absolute inset-0 w-full h-full object-cover">
+                    <!-- Gradient Overlay -->
+                    <div class="absolute inset-0 bg-gradient-to-br from-amber-500/90 to-orange-600/90"></div>
+                    <!-- Content -->
+                    <div class="relative text-white text-center z-10 flex items-center justify-center h-full">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-2">Crozier Fine Arts</h3>
+                            <span class="px-3 py-1 bg-white/20 rounded-full text-sm">Art Storage & Transport</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="mb-4">
+                        <div class="flex items-center space-x-4 mb-3">
+                            <div class="bg-amber-100 p-2 rounded-lg">
+                                <i data-lucide="palette" class="w-5 h-5 text-amber-600"></i>
+                            </div>
+                            <span class="text-sm font-semibold text-amber-800">Premium Brand Positioning</span>
+                        </div>
+                        <p class="text-slate-600 text-sm mb-4">
+                            <strong>Challenge:</strong> World-leading art logistics company had industrial imagery unsuitable for billionaire art collectors and luxury galleries.
+                        </p>
+                        <p class="text-slate-600 text-sm mb-4">
+                            <strong>Solution:</strong> Photorealistic 3D asset library transforming trucks, warehouses, and crates into luxury-standard visuals.
+                        </p>
+                    </div>
+                    <div class="border-t pt-4">
+                        <div class="grid grid-cols-2 gap-4 mb-4">
+                            <div class="text-center">
+                                <div class="text-lg font-bold text-amber-600">Peak</div>
+                                <div class="text-xs text-slate-500">Social Engagement</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-lg font-bold text-orange-600">HNI</div>
+                                <div class="text-xs text-slate-500">Client Ready</div>
+                            </div>
+                        </div>
+                        <a href="https://casestudies.advertflair.com/Crozier/" 
+                           class="block w-full text-center bg-gradient-to-r from-amber-500 to-orange-600 text-white py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity">
+                            Read Full Case Study
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DHEN Case Study -->
+            <div class="card-hover bg-white rounded-2xl shadow-lg overflow-hidden border border-slate-200/50">
+                <div class="h-48 relative overflow-hidden">
+                    <!-- Background Image -->
+                    <img src="/DHEN/Assets/images/DEHN Webapp After.gif" alt="DHEN Interactive Experience Background" class="absolute inset-0 w-full h-full object-cover">
+                    <!-- Gradient Overlay -->
+                    <div class="absolute inset-0 bg-gradient-to-br from-emerald-500/90 to-teal-600/90"></div>
+                    <!-- Content -->
+                    <div class="relative text-white text-center z-10 flex items-center justify-center h-full">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-2">DHEN India</h3>
+                            <span class="px-3 py-1 bg-white/20 rounded-full text-sm">Electrical Manufacturing</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="mb-4">
+                        <div class="flex items-center space-x-4 mb-3">
+                            <div class="bg-emerald-100 p-2 rounded-lg">
+                                <i data-lucide="monitor" class="w-5 h-5 text-emerald-600"></i>
+                            </div>
+                            <span class="text-sm font-semibold text-emerald-800">Interactive Product Experience</span>
+                        </div>
+                        <p class="text-slate-600 text-sm mb-4">
+                            <strong>Challenge:</strong> B2B manufacturer struggled with static displays and overwhelmed sales teams at trade shows and expos.
+                        </p>
+                        <p class="text-slate-600 text-sm mb-4">
+                            <strong>Solution:</strong> Interactive 3D WebApp with 360° product exploration, transforming booth visits into qualified leads.
+                        </p>
+                    </div>
+                    <div class="border-t pt-4">
+                        <div class="grid grid-cols-2 gap-4 mb-4">
+                            <div class="text-center">
+                                <div class="text-lg font-bold text-emerald-600">3x</div>
+                                <div class="text-xs text-slate-500">Longer Visits</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-lg font-bold text-teal-600">2x</div>
+                                <div class="text-xs text-slate-500">More Inquiries</div>
+                            </div>
+                        </div>
+                        <a href="https://casestudies.advertflair.com/DHEN/" 
+                           class="block w-full text-center bg-gradient-to-r from-emerald-500 to-teal-600 text-white py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity">
+                            Read Full Case Study
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+    <!-- Solution Types -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Our AI Solutions</h2>
+                <p class="text-lg text-slate-600">Comprehensive visual content and experience creation across industries</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="text-center p-6 bg-slate-50 rounded-xl border border-slate-200/50">
+                    <div class="w-12 h-12 bg-[#4934bc]/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="camera" class="w-6 h-6 text-[#4934bc]"></i>
+                    </div>
+                    <h3 class="font-semibold mb-2">AI Model Photography</h3>
+                    <p class="text-sm text-slate-600">Enterprise-grade fashion photography with 98% texture accuracy</p>
+                </div>
+                <div class="text-center p-6 bg-slate-50 rounded-xl border border-slate-200/50">
+                    <div class="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="box" class="w-6 h-6 text-amber-600"></i>
+                    </div>
+                    <h3 class="font-semibold mb-2">3D Asset Creation</h3>
+                    <p class="text-sm text-slate-600">Photorealistic 3D models for luxury brand positioning</p>
+                </div>
+                <div class="text-center p-6 bg-slate-50 rounded-xl border border-slate-200/50">
+                    <div class="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="monitor" class="w-6 h-6 text-emerald-600"></i>
+                    </div>
+                    <h3 class="font-semibold mb-2">Interactive Experiences</h3>
+                    <p class="text-sm text-slate-600">Touch-first 3D applications for trade shows and kiosks</p>
+                </div>
+                <div class="text-center p-6 bg-slate-50 rounded-xl border border-slate-200/50">
+                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="layers" class="w-6 h-6 text-purple-600"></i>
+                    </div>
+                    <h3 class="font-semibold mb-2">Omnichannel Content</h3>
+                    <p class="text-sm text-slate-600">Scalable visual ecosystems across all marketing channels</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries Served -->
+    <section class="py-20 bg-slate-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Industries We Transform</h2>
+                <p class="text-lg text-slate-600">Proven solutions across diverse sectors with measurable ROI</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-slate-200/50">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-[#4934bc]/10 rounded-lg flex items-center justify-center mr-4">
+                            <i data-lucide="shirt" class="w-6 h-6 text-[#4934bc]"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">Fashion & Retail</h3>
+                    </div>
+                    <p class="text-slate-600 mb-4">Replace photo agencies with AI-powered model photography. Achieve 98% texture accuracy at 1/3rd traditional cost.</p>
+                    <ul class="text-sm text-slate-600 space-y-2">
+                        <li>• Enterprise AI photography platforms</li>
+                        <li>• E-commerce and social media content</li>
+                        <li>• Unlimited creative variations</li>
+                        <li>• Brand-consistent styling</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-slate-200/50">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center mr-4">
+                            <i data-lucide="palette" class="w-6 h-6 text-amber-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">Luxury Services</h3>
+                    </div>
+                    <p class="text-slate-600 mb-4">Transform industrial imagery into luxury-standard visuals that impress high-net-worth clients and premium markets.</p>
+                    <ul class="text-sm text-slate-600 space-y-2">
+                        <li>• Photorealistic 3D asset libraries</li>
+                        <li>• Premium brand positioning</li>
+                        <li>• HNI client-ready materials</li>
+                        <li>• Omnichannel deployment</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-slate-200/50">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mr-4">
+                            <i data-lucide="cpu" class="w-6 h-6 text-emerald-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">B2B Manufacturing</h3>
+                    </div>
+                    <p class="text-slate-600 mb-4">Create interactive product experiences that turn trade show foot traffic into qualified leads with 3x longer engagement.</p>
+                    <ul class="text-sm text-slate-600 space-y-2">
+                        <li>• Interactive 3D WebApps</li>
+                        <li>• Trade show kiosk solutions</li>
+                        <li>• 360° product exploration</li>
+                        <li>• Digital engagement layers</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section id="results" class="py-20 gradient-bg">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Ready to Transform Your Visual Content?</h2>
+            <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+                Join leading companies across fashion, luxury services, and manufacturing who are already seeing dramatic improvements in efficiency, engagement, and ROI.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#contact" class="bg-[#fe2267] text-white font-bold px-8 py-4 rounded-lg hover:bg-[#e01b58] transition-all duration-300 transform hover:scale-105">
+                    Schedule Consultation
+                </a>
+                <button class="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white/10 transition-colors">
+                    View All Solutions
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="gradient-bg rounded-2xl p-10 md:p-16 text-white overflow-hidden relative">
+                <div class="absolute -top-10 -right-10 w-48 h-48 bg-white/10 rounded-full"></div>
+                <div class="absolute -bottom-16 -left-10 w-40 h-40 bg-white/10 rounded-full"></div>
+                <div class="relative z-10 grid md:grid-cols-2 gap-12 items-center">
+                    <div class="text-center md:text-left">
+                        <h2 class="text-3xl md:text-5xl font-bold mb-4">Ready to Get Started?</h2>
+                        <p class="max-w-2xl text-lg text-white/80">
+                            Whether you need AI-powered photography, luxury brand positioning, or interactive product experiences, we've proven our solutions across diverse industries. Let's discuss how we can transform your visual content strategy.
+                        </p>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm p-8 rounded-xl">
+                        <div id="form-container">
+                            <form id="contact-form" class="space-y-4">
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                    <div>
+                                        <label for="name" class="block text-sm font-medium text-white/80 mb-1">Full Name</label>
+                                        <input type="text" id="name" name="name" required class="w-full bg-white/20 border-white/30 border rounded-lg py-2 px-3 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-[#ff9e02]">
+                                    </div>
+                                    <div>
+                                        <label for="email" class="block text-sm font-medium text-white/80 mb-1">Work Email</label>
+                                        <input type="email" id="email" name="email" required class="w-full bg-white/20 border-white/30 border rounded-lg py-2 px-3 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-[#ff9e02]">
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                    <div>
+                                        <label for="phone" class="block text-sm font-medium text-white/80 mb-1">Phone Number</label>
+                                        <input type="tel" id="phone" name="phone" required class="w-full bg-white/20 border-white/30 border rounded-lg py-2 px-3 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-[#ff9e02]">
+                                    </div>
+                                    <div>
+                                        <label for="company" class="block text-sm font-medium text-white/80 mb-1">Company Name</label>
+                                        <input type="text" id="company" name="company" required class="w-full bg-white/20 border-white/30 border rounded-lg py-2 px-3 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-[#ff9e02]">
+                                    </div>
+                                </div>
+                                <div>
+                                    <label for="industry" class="block text-sm font-medium text-white/80 mb-1">Industry</label>
+                                    <select id="industry" name="industry" required class="w-full bg-white/20 border-white/30 border rounded-lg py-2 px-3 text-white focus:outline-none focus:ring-2 focus:ring-[#ff9e02]">
+                                        <option value="" class="text-slate-800">Select your industry</option>
+                                        <option value="fashion" class="text-slate-800">Fashion & Retail</option>
+                                        <option value="luxury" class="text-slate-800">Luxury Services</option>
+                                        <option value="manufacturing" class="text-slate-800">B2B Manufacturing</option>
+                                        <option value="other" class="text-slate-800">Other</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="requirement" class="block text-sm font-medium text-white/80 mb-1">Your Requirement</label>
+                                    <textarea id="requirement" name="requirement" rows="3" required class="w-full bg-white/20 border-white/30 border rounded-lg py-2 px-3 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-[#ff9e02]" placeholder="Tell us about your visual content challenges..."></textarea>
+                                </div>
+                                <button type="submit" class="w-full bg-[#ff9e02] text-white font-bold px-10 py-3 rounded-lg hover:bg-[#e68e00] transition-all duration-300 transform hover:scale-105 shadow-lg">
+                                    Get Your Custom Solution Strategy
+                                </button>
+                            </form>
+                        </div>
+                        <div id="form-message" class="hidden text-center">
+                            <i data-lucide="check-circle" class="w-16 h-16 text-green-400 mx-auto mb-4"></i>
+                            <h3 class="text-2xl font-bold mb-2">Thank You!</h3>
+                            <p class="text-white/80">Your message has been sent. We'll be in touch soon.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <img src="https://cdn.prod.website-files.com/6336da2704c4776a047e9529/6336da2704c47740ce7e9542_image%201.webp" alt="Advertflair Logo" class="h-8 w-auto filter invert brightness-0">
+                    </div>
+                    <p class="text-slate-400">Transforming businesses with AI-powered visual content creation across industries.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Solutions</h4>
+                    <ul class="space-y-2 text-slate-400">
+                        <li><a href="#" class="hover:text-white transition-colors">AI Model Photography</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">3D Asset Creation</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Interactive Experiences</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Omnichannel Content</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Case Studies</h4>
+                    <ul class="space-y-2 text-slate-400">
+                        <li><a href="https://casestudies.advertflair.com/Dillards/" class="hover:text-white transition-colors">Dillards - Fashion AI</a></li>
+                        <li><a href="https://casestudies.advertflair.com/Crozier/" class="hover:text-white transition-colors">Crozier - Luxury Branding</a></li>
+                        <li><a href="https://casestudies.advertflair.com/DHEN/" class="hover:text-white transition-colors">DHEN - Interactive Expo</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Industries</h4>
+                    <ul class="space-y-2 text-slate-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Fashion & Retail</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Luxury Services</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">B2B Manufacturing</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">View All Industries</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-slate-700 mt-8 pt-8 text-center text-slate-400">
+                <p>&copy; 2025 AdvertFlair. All rights reserved. | Your Digital Transformation Partner</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+        
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Close mobile menu when a link is clicked
+        const mobileMenuLinks = mobileMenu.getElementsByTagName('a');
+        for (let link of mobileMenuLinks) {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Contact Form Handler
+        const contactForm = document.getElementById('contact-form');
+        const formContainer = document.getElementById('form-container');
+        const formMessage = document.getElementById('form-message');
+
+        contactForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            // On success, hide form and show message
+            formContainer.classList.add('hidden');
+            formMessage.classList.remove('hidden');
+            // Re-render icons in the success message
+            lucide.createIcons();
+        });
+    </script>
+
+</body>
+</html>
+                                

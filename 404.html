@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found - AdvertFlair Case Studies</title>
+    <link rel="icon" href="/Assets/images/favicon_adv.ico" type="image/x-icon">
+    <link rel="icon" href="/Assets/images/favicon_adv.png" type="image/png">
+    <link rel="icon" href="/Assets/images/favicon_adv.svg" type="image/svg+xml">
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+            color: #1e293b;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #4934bc 0%, #3a2a9a 100%);
+        }
+        .text-gradient {
+            background: linear-gradient(90deg, #fe2267, #ff9e02);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col">
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <img src="https://cdn.prod.website-files.com/6336da2704c4776a047e9529/6336da2704c47740ce7e9542_image%201.webp" alt="Advertflair Logo" class="h-10 w-auto">
+                </div>
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="/" class="text-slate-600 hover:text-[#4934bc] transition-colors">Home</a>
+                    <a href="/Dillards/" class="text-slate-600 hover:text-[#4934bc] transition-colors">Dillards</a>
+                    <a href="/Crozier/" class="text-slate-600 hover:text-[#4934bc] transition-colors">Crozier</a>
+                    <a href="/DHEN/" class="text-slate-600 hover:text-[#4934bc] transition-colors">DHEN</a>
+                </nav>
+                <a href="/#contact" class="hidden md:inline-block bg-[#4934bc] text-white font-semibold px-5 py-2 rounded-lg hover:bg-[#3a2a9a] transition-all duration-300">
+                    Let's Talk
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 404 Content -->
+    <main class="flex-grow flex items-center justify-center px-6 py-20">
+        <div class="text-center max-w-2xl mx-auto">
+            <!-- Error Icon -->
+            <div class="mb-8">
+                <div class="w-32 h-32 mx-auto bg-gradient-to-br from-[#4934bc] to-[#3a2a9a] rounded-full flex items-center justify-center">
+                    <i data-lucide="search-x" class="w-16 h-16 text-white"></i>
+                </div>
+            </div>
+            
+            <!-- Error Message -->
+            <h1 class="text-6xl md:text-8xl font-extrabold text-slate-800 mb-4">404</h1>
+            <h2 class="text-2xl md:text-3xl font-bold mb-6">
+                <span class="text-gradient">Page Not Found</span>
+            </h2>
+            <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                Oops! The page you're looking for doesn't exist. It might have been moved, deleted, or you entered the wrong URL.
+            </p>
+            
+            <!-- Action Buttons -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="/" class="bg-[#4934bc] text-white font-bold px-8 py-4 rounded-lg hover:bg-[#3a2a9a] transition-all duration-300 transform hover:scale-105">
+                    <i data-lucide="home" class="w-5 h-5 inline mr-2"></i>
+                    Back to Home
+                </a>
+                <a href="javascript:history.back()" class="border-2 border-[#4934bc] text-[#4934bc] font-bold px-8 py-4 rounded-lg hover:bg-[#4934bc] hover:text-white transition-all duration-300">
+                    <i data-lucide="arrow-left" class="w-5 h-5 inline mr-2"></i>
+                    Go Back
+                </a>
+            </div>
+            
+            <!-- Popular Pages -->
+            <div class="mt-12 pt-8 border-t border-slate-200">
+                <h3 class="text-lg font-semibold text-slate-800 mb-6">Popular Case Studies</h3>
+                <div class="grid md:grid-cols-3 gap-4">
+                    <a href="/Dillards/" class="group p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 border border-slate-200">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-[#4934bc]/10 rounded-lg flex items-center justify-center">
+                                <i data-lucide="camera" class="w-5 h-5 text-[#4934bc]"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-slate-800 group-hover:text-[#4934bc] transition-colors">Dillards</h4>
+                                <p class="text-sm text-slate-600">Fashion AI</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/Crozier/" class="group p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 border border-slate-200">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
+                                <i data-lucide="palette" class="w-5 h-5 text-amber-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-slate-800 group-hover:text-amber-600 transition-colors">Crozier</h4>
+                                <p class="text-sm text-slate-600">Luxury Branding</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/DHEN/" class="group p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 border border-slate-200">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center">
+                                <i data-lucide="monitor" class="w-5 h-5 text-emerald-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-slate-800 group-hover:text-emerald-600 transition-colors">DHEN</h4>
+                                <p class="text-sm text-slate-600">Interactive Expo</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex items-center justify-center space-x-2 mb-4">
+                <img src="https://cdn.prod.website-files.com/6336da2704c4776a047e9529/6336da2704c47740ce7e9542_image%201.webp" alt="Advertflair Logo" class="h-8 w-auto filter invert brightness-0">
+            </div>
+            <p class="text-slate-400 mb-2">Your Digital Transformation Partner</p>
+            <p class="text-sm text-slate-500">&copy; 2025 AdvertFlair. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+
+</body>
+</html>
