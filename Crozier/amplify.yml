@@ -1,0 +1,18 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - echo "Starting Crozier Fine Arts case study build"
+    build:
+      commands:
+        - echo "Building Crozier case study"
+    postBuild:
+      commands:
+        - echo "Crozier case study build completed"
+  artifacts:
+    baseDirectory: /
+    files:
+      - '**/*'
+  cache:
+    paths: []

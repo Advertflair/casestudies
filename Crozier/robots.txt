@@ -6,7 +6,7 @@ Disallow: /Assets/
 Disallow: /*.git
 
 # Sitemap location
-Sitemap: https://casestudies.advertflair.com/DHEN/sitemap.xml
+Sitemap: https://casestudies.advertflair.com/Crozier/sitemap.xml
 
 # Crawl delay to be respectful to servers
 Crawl-delay: 1
