@@ -1,4 +1,457 @@
-illards' AI investment and create comprehensive digital marketing ecosystems.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dillards Case Study | Advertflair</title>
+      <link rel="icon" href="/DHEN/Assets/images/favicon_adv.ico" type="image/x-icon">
+      <link rel="icon" href="/DHEN/Assets/images/favicon_adv.png" type="image/png">
+    <link rel="icon" href="/DHEN/Assets/images/favicon_adv.svg" type="image/svg+xml">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* slate-50 */
+            color: #1e293b; /* slate-800 */
+        }
+        /* Custom gradient for hero section */
+        .gradient-bg {
+            background: linear-gradient(135deg, #4934bc 0%, #3a2a9a 100%);
+        }
+        /* Custom gradient for text */
+        .text-gradient {
+            background: linear-gradient(90deg, #fe2267, #ff9e02);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+        /* Custom card styling */
+        .stat-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .stat-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+        /* Scroll behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Platform demo styling */
+        .platform-demo {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            border: 2px solid #e2e8f0;
+        }
+        /* Input section styling */
+        .input-section {
+            background: white;
+            border-left: 4px solid #4934bc;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="bg-white fixed top-0 left-0 right-0 z-50 shadow-sm">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                     <img src="https://cdn.prod.website-files.com/6336da2704c4776a047e9529/6336da2704c47740ce7e9542_image%201.webp" alt="Advertflair Logo" class="h-10 w-auto">
+                </div>
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#problem" class="text-slate-600 hover:text-[#4934bc] transition-colors">The Problem</a>
+                    <a href="#solution" class="text-slate-600 hover:text-[#4934bc] transition-colors">Our Solution</a>
+                    <a href="#impact" class="text-slate-600 hover:text-[#4934bc] transition-colors">Impact</a>
+                </nav>
+                <a href="#contact" class="hidden md:inline-block bg-[#4934bc] text-white font-semibold px-5 py-2 rounded-lg hover:bg-[#3a2a9a] transition-all duration-300 transform hover:scale-105">
+                    Let's Talk
+                </a>
+                <button id="mobile-menu-button" class="md:hidden text-slate-800">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white px-6 pb-4">
+             <a href="#problem" class="block py-2 text-slate-600 hover:text-[#4934bc]">The Problem</a>
+             <a href="#solution" class="block py-2 text-slate-600 hover:text-[#4934bc]">Our Solution</a>
+             <a href="#impact" class="block py-2 text-slate-600 hover:text-[#4934bc]">Impact</a>
+             <a href="#contact" class="block mt-4 w-full text-center bg-[#4934bc] text-white font-semibold px-5 py-2 rounded-lg hover:bg-[#3a2a9a]">Let's Talk</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="gradient-bg text-white pt-32 pb-20">
+            <div class="container mx-auto px-6 text-center">
+                <span class="text-sm font-bold uppercase tracking-widest text-white/70">Case Study: Dillards</span>
+                <h1 class="text-4xl md:text-6xl font-extrabold mt-4 mb-6 leading-tight">
+                    Replacing Photo Agencies with Enterprise AI Platforms
+                </h1>
+                <p class="max-w-3xl mx-auto text-lg md:text-xl text-white/80 mb-12">
+                    How Dillards achieved 98% texture accuracy and eliminated traditional photo shoots using our Glam AI and Style AI enterprise platforms—delivering photo-agency quality at 1/3rd the cost.
+                </p>
+                <div class="flex justify-center space-x-4">
+                    <a href="#impact" class="bg-[#fe2267] text-white font-bold px-8 py-4 rounded-lg hover:bg-[#e01b58] transition-all duration-300 transform hover:scale-105">
+                        See The Results
+                    </a>
+                    <a href="#solution" class="bg-white/20 text-white font-bold px-8 py-4 rounded-lg hover:bg-white/30 transition-all duration-300">
+                        Explore The Platform
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Client Info Bar -->
+        <section class="bg-white py-8 shadow-md -mt-10 relative z-10 mx-4 md:mx-auto max-w-6xl rounded-xl">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                    <div class="flex flex-col items-center">
+                        <i data-lucide="store" class="w-8 h-8 mb-2 text-[#4934bc]"></i>
+                        <h3 class="font-bold text-slate-500 text-sm uppercase">Audience</h3>
+                        <p class="text-lg font-semibold text-slate-800">Fashion Retailers</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <i data-lucide="shirt" class="w-8 h-8 mb-2 text-[#4934bc]"></i>
+                        <h3 class="font-bold text-slate-500 text-sm uppercase">Industry</h3>
+                        <p class="text-lg font-semibold text-slate-800">Fashion & E-commerce</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                         <i data-lucide="replace" class="w-8 h-8 mb-2 text-[#4934bc]"></i>
+                        <h3 class="font-bold text-slate-500 text-sm uppercase">Objective</h3>
+                        <p class="text-lg font-semibold text-slate-800">Photo Agency Replacement</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <i data-lucide="cpu" class="w-8 h-8 mb-2 text-[#4934bc]"></i>
+                        <h3 class="font-bold text-slate-500 text-sm uppercase">Platform</h3>
+                        <p class="text-lg font-semibold text-slate-800">Glam AI & Style AI</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Problem Section -->
+        <section id="problem" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">The <span class="text-gradient">Problem</span>: Traditional Photo Agency Limitations</h2>
+                    <p class="text-lg text-slate-600">
+                        Dillards, one of America's largest fashion retailers, faced the classic e-commerce photography dilemma: balancing quality, speed, and cost across thousands of product launches.
+                    </p>
+                </div>
+                <div class="mt-16 grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Problem Card 1 -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg border border-slate-200/50">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-[#4934bc]/10 mb-4">
+                            <i data-lucide="dollar-sign" class="text-[#4934bc]"></i>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2">Expensive Photo Shoots</h3>
+                        <p class="text-slate-600">Traditional photo agencies required costly studio setups, professional models, makeup artists, and extensive post-production for every product variation.</p>
+                    </div>
+                    <!-- Problem Card 2 -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg border border-slate-200/50">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-[#4934bc]/10 mb-4">
+                            <i data-lucide="clock" class="text-[#4934bc]"></i>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2">Slow Time-to-Market</h3>
+                        <p class="text-slate-600">Product launches delayed by weeks waiting for photo shoots, model availability, and post-production—critical time lost in fast-fashion cycles.</p>
+                    </div>
+                    <!-- Problem Card 3 -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg border border-slate-200/50">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-[#4934bc]/10 mb-4">
+                            <i data-lucide="lock" class="text-[#4934bc]"></i>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2">Limited Creative Control</h3>
+                        <p class="text-slate-600">Once photos were taken, making changes required entirely new shoots. No flexibility for different poses, backgrounds, or styling variations.</p>
+                    </div>
+                    <!-- Problem Card 4 -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg border border-slate-200/50">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-[#4934bc]/10 mb-4">
+                            <i data-lucide="puzzle" class="text-[#4934bc]"></i>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2">Inconsistent Accessory Pairing</h3>
+                        <p class="text-slate-600">The biggest industry challenge: AI solutions couldn't properly pair accessories with garments, leading to unrealistic or mismatched combinations.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Solution Section -->
+        <section id="solution" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Our <span class="text-gradient">Solution</span>: Enterprise AI Platforms</h2>
+                    <p class="text-lg text-slate-600 mb-12">
+                        We created custom <strong>Glam AI</strong> and <strong>Style AI</strong> platforms that combine cutting-edge generative AI with human expertise, delivering photo-agency quality at revolutionary speed and cost through controlled AI workflows.
+                    </p>
+                </div>
+
+                <!-- Platform Overview -->
+                <div class="max-w-6xl mx-auto mb-16 platform-demo rounded-2xl p-8">
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold text-slate-800 mb-4">From Email Chaos to Enterprise Platform</h3>
+                        <p class="text-slate-600">Before: Clients sent us emails with scattered requirements. Now: Professional moodboard creation and campaign visualization through our custom platforms.</p>
+                    </div>
+                    
+                    <!-- Before/After Platform Evolution -->
+                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                        <div class="text-center">
+                            <span class="text-slate-500 font-bold">BEFORE: Email Communication</span>
+                            <div class="bg-white rounded-lg p-6 mt-4 border-2 border-red-200">
+                                <i data-lucide="mail" class="w-12 h-12 text-red-400 mx-auto mb-4"></i>
+                                <p class="text-slate-600 text-sm">Scattered requirements sent via email</p>
+                                <p class="text-slate-600 text-sm">No visual moodboards</p>
+                                <p class="text-slate-600 text-sm">Disconnected workflow</p>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <span class="text-slate-500 font-bold">AFTER: Glam AI Platform</span>
+                            <div class="bg-white rounded-lg p-6 mt-4 border-2 border-green-200">
+                                <i data-lucide="layout-dashboard" class="w-12 h-12 text-green-400 mx-auto mb-4"></i>
+                                <p class="text-slate-600 text-sm">Professional moodboard creation</p>
+                                <p class="text-slate-600 text-sm">Campaign visualization tools</p>
+                                <p class="text-slate-600 text-sm">Integrated enterprise workflow</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Platform Input System -->
+                <div class="max-w-6xl mx-auto mb-16">
+                    <h3 class="text-2xl font-bold text-center mb-8">Intelligent Upload System: Controlled AI Precision</h3>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- Input Card 1 -->
+                        <div class="input-section p-6 rounded-xl shadow-lg">
+                            <div class="flex items-center mb-4">
+                                <i data-lucide="shirt" class="w-8 h-8 text-[#4934bc] mr-3"></i>
+                                <h4 class="font-bold text-lg">Apparel Details</h4>
+                            </div>
+                            <img src="Assets/images/input-apparel.jpg" alt="Apparel Input Interface" class="w-full rounded-lg mb-4">
+                            <ul class="text-sm text-slate-600 space-y-1">
+                                <li>• High-resolution garment photos</li>
+                                <li>• Fabric texture analysis</li>
+                                <li>• Color variation mapping</li>
+                                <li>• Styling detail capture</li>
+                            </ul>
+                        </div>
+
+                        <!-- Input Card 2 -->
+                        <div class="input-section p-6 rounded-xl shadow-lg">
+                            <div class="flex items-center mb-4">
+                                <i data-lucide="gem" class="w-8 h-8 text-[#4934bc] mr-3"></i>
+                                <h4 class="font-bold text-lg">Accessory Pairing</h4>
+                            </div>
+                            <img src="Assets/images/input-accessories.jpg" alt="Accessory Pairing Interface" class="w-full rounded-lg mb-4">
+                            <ul class="text-sm text-slate-600 space-y-1">
+                                <li>• Smart accessory matching</li>
+                                <li>• Jewelry, shoes, bags</li>
+                                <li>• Style compatibility analysis</li>
+                                <li>• 98% accuracy pairing</li>
+                            </ul>
+                        </div>
+
+                        <!-- Input Card 3 -->
+                        <div class="input-section p-6 rounded-xl shadow-lg">
+                            <div class="flex items-center mb-4">
+                                <i data-lucide="users" class="w-8 h-8 text-[#4934bc] mr-3"></i>
+                                <h4 class="font-bold text-lg">Model & Poses</h4>
+                            </div>
+                            <img src="Assets/images/input-poses.jpg" alt="Model Pose Selection" class="w-full rounded-lg mb-4">
+                            <ul class="text-sm text-slate-600 space-y-1">
+                                <li>• Standing, sitting, dynamic poses</li>
+                                <li>• Age and style preferences</li>
+                                <li>• Brand-appropriate models</li>
+                                <li>• Specific pose directions</li>
+                            </ul>
+                        </div>
+
+                        <!-- Input Card 4 -->
+                        <div class="input-section p-6 rounded-xl shadow-lg">
+                            <div class="flex items-center mb-4">
+                                <i data-lucide="image" class="w-8 h-8 text-[#4934bc] mr-3"></i>
+                                <h4 class="font-bold text-lg">Background Themes</h4>
+                            </div>
+                            <img src="Assets/images/input-backgrounds.jpg" alt="Background Theme Selection" class="w-full rounded-lg mb-4">
+                            <ul class="text-sm text-slate-600 space-y-1">
+                                <li>• Lifestyle settings upload</li>
+                                <li>• Studio preferences</li>
+                                <li>• Seasonal theme matching</li>
+                                <li>• Brand environment alignment</li>
+                            </ul>
+                        </div>
+
+                        <!-- Input Card 5 -->
+                        <div class="input-section p-6 rounded-xl shadow-lg">
+                            <div class="flex items-center mb-4">
+                                <i data-lucide="palette" class="w-8 h-8 text-[#4934bc] mr-3"></i>
+                                <h4 class="font-bold text-lg">Style Direction</h4>
+                            </div>
+                            <img src="Assets/images/input-styling.jpg" alt="Style Direction Input" class="w-full rounded-lg mb-4">
+                            <ul class="text-sm text-slate-600 space-y-1">
+                                <li>• Campaign mood boards</li>
+                                <li>• Color palette preferences</li>
+                                <li>• Lighting style requirements</li>
+                                <li>• Brand aesthetic guidelines</li>
+                            </ul>
+                        </div>
+
+                        <!-- Input Card 6 -->
+                        <div class="input-section p-6 rounded-xl shadow-lg">
+                            <div class="flex items-center mb-4">
+                                <i data-lucide="target" class="w-8 h-8 text-[#4934bc] mr-3"></i>
+                                <h4 class="font-bold text-lg">Output Requirements</h4>
+                            </div>
+                            <img src="Assets/images/input-outputs.jpg" alt="Output Format Selection" class="w-full rounded-lg mb-4">
+                            <ul class="text-sm text-slate-600 space-y-1">
+                                <li>• Website product pages</li>
+                                <li>• Hero banners & campaigns</li>
+                                <li>• High-res store printouts</li>
+                                <li>• Social media formats</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Technology Stack -->
+                <div class="mt-20 grid md:grid-cols-3 gap-8 text-center">
+                    <div class="flex flex-col items-center">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-[#fe2267]/10 mb-4">
+                            <i data-lucide="brain" class="w-8 h-8 text-[#fe2267]"></i>
+                        </div>
+                        <h3 class="font-bold text-xl mb-2">98% Texture Accuracy</h3>
+                        <p class="text-slate-600">Proprietary AI models achieve industry-leading texture accuracy combining 70% AI generation with 30% manual refinement by expert artists.</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-[#fe2267]/10 mb-4">
+                            <i data-lucide="settings" class="w-8 h-8 text-[#fe2267]"></i>
+                        </div>
+                        <h3 class="font-bold text-xl mb-2">Controlled AI Workflow</h3>
+                        <p class="text-slate-600">Not random AI generation—precise, controlled workflows with enterprise-grade quality control and brand consistency.</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-[#fe2267]/10 mb-4">
+                            <i data-lucide="layers" class="w-8 h-8 text-[#fe2267]"></i>
+                        </div>
+                        <h3 class="font-bold text-xl mb-2">Multiple Output Formats</h3>
+                        <p class="text-slate-600">From one upload session, generate assets for websites, campaigns, store displays, social media, and print catalogs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Live Example Section -->
+        <section class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">See <span class="text-gradient">Glam AI</span> in Action</h2>
+                    <p class="text-lg text-slate-600">
+                        Live example from Dillards.com showcasing our AI-generated model photography in production use.
+                    </p>
+                </div>
+                
+                <!-- Live Example -->
+                <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden">
+                    <div class="p-6 bg-slate-50 border-b">
+                        <div class="flex items-center space-x-4">
+                            <i data-lucide="external-link" class="w-5 h-5 text-slate-500"></i>
+                            <span class="text-sm text-slate-500">Live on Dillards.com</span>
+                            <a href="https://www.dillards.com/p/reba-sage-knit-v-neck-asymmetrical-fringe-long-sleeve-button-down-cardigan/520485284" target="_blank" class="text-blue-600 hover:text-blue-800 text-sm">View Product Page</a>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <img src="Assets/images/dillards-live-example.jpg" alt="Dillards Live Example - Reba Cardigan" class="w-full rounded-lg shadow-lg">
+                        <div class="mt-6 grid md:grid-cols-3 gap-4 text-center">
+                            <div class="p-4 bg-green-50 rounded-lg">
+                                <i data-lucide="check-circle" class="w-6 h-6 text-green-600 mx-auto mb-2"></i>
+                                <p class="text-sm font-semibold text-green-800">Perfect Texture Accuracy</p>
+                                <p class="text-xs text-green-600">Knit fabric detail preserved</p>
+                            </div>
+                            <div class="p-4 bg-blue-50 rounded-lg">
+                                <i data-lucide="user-check" class="w-6 h-6 text-blue-600 mx-auto mb-2"></i>
+                                <p class="text-sm font-semibold text-blue-800">Natural Model Pose</p>
+                                <p class="text-xs text-blue-600">Relaxed, authentic styling</p>
+                            </div>
+                            <div class="p-4 bg-purple-50 rounded-lg">
+                                <i data-lucide="palette" class="w-6 h-6 text-purple-600 mx-auto mb-2"></i>
+                                <p class="text-sm font-semibold text-purple-800">Brand-Consistent Environment</p>
+                                <p class="text-xs text-purple-600">Studio setting matches brand</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Impact Section -->
+        <section id="impact" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">The <span class="text-gradient">Impact</span>: Photo Agency Replacement at Scale</h2>
+                    <p class="text-lg text-slate-600 mb-16">
+                        The results transformed Dillards' entire content creation workflow, delivering everything a traditional photo agency provides—faster and at a fraction of the cost.
+                    </p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Stat Card 1 -->
+                    <div class="stat-card bg-white p-8 rounded-2xl shadow-xl border border-slate-200/50">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-[#ff9e02]/10 mb-6">
+                           <i data-lucide="trending-down" class="w-8 h-8 text-[#ff9e02]"></i>
+                        </div>
+                        <p class="text-5xl font-extrabold text-slate-800">1/3</p>
+                        <h3 class="font-semibold text-xl mt-2">Traditional Cost</h3>
+                        <p class="text-slate-600 mt-2">Eliminated studio rentals, model fees, makeup artists, and extensive post-production while maintaining premium quality.</p>
+                    </div>
+                    <!-- Stat Card 2 -->
+                    <div class="stat-card bg-white p-8 rounded-2xl shadow-xl border border-slate-200/50">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-[#ff9e02]/10 mb-6">
+                            <i data-lucide="zap" class="w-8 h-8 text-[#ff9e02]"></i>
+                        </div>
+                        <p class="text-5xl font-extrabold text-slate-800">10x</p>
+                        <h3 class="font-semibold text-xl mt-2">Faster Turnaround</h3>
+                        <p class="text-slate-600 mt-2">Product launches accelerated from weeks to days, enabling rapid response to fashion trends and seasonal demands.</p>
+                    </div>
+                    <!-- Stat Card 3 -->
+                    <div class="stat-card bg-white p-8 rounded-2xl shadow-xl border border-slate-200/50">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-[#ff9e02]/10 mb-6">
+                            <i data-lucide="infinity" class="w-8 h-8 text-[#ff9e02]"></i>
+                        </div>
+                        <p class="text-3xl font-extrabold text-slate-800">Unlimited</p>
+                        <h3 class="font-semibold text-xl mt-2">Creative Variations</h3>
+                        <p class="text-slate-600 mt-2">Complete creative freedom to test different poses, backgrounds, and styling combinations without additional shoots.</p>
+                    </div>
+                    <!-- Stat Card 4 -->
+                    <div class="stat-card bg-white p-8 rounded-2xl shadow-xl border border-slate-200/50">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-[#ff9e02]/10 mb-6">
+                            <i data-lucide="building" class="w-8 h-8 text-[#ff9e02]"></i>
+                        </div>
+                        <p class="text-3xl font-extrabold text-slate-800">Enterprise</p>
+                        <h3 class="font-semibold text-xl mt-2">Scale Deployment</h3>
+                        <p class="text-slate-600 mt-2">Seamless integration handling thousands of products with consistent quality and brand alignment.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Future Enhancement Section -->
+        <section class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Beyond Current AI: <span class="text-gradient">The Future Enhancement</span></h2>
+                    <p class="text-lg text-slate-600">
+                        We've identified three strategic opportunities to maximize Dillards' AI investment and create comprehensive digital marketing ecosystems.
                     </p>
                 </div>
                 
@@ -160,3 +613,4 @@ illards' AI investment and create comprehensive digital marketing ecosystems.
 
 </body>
 </html>
+                        
