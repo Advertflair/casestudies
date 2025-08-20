@@ -379,7 +379,6 @@
                 </div>
             </div>
         </section>
-
         <!-- CTA Section -->
         <section id="contact" class="bg-white">
             <div class="container mx-auto px-6 py-20">
@@ -398,7 +397,26 @@
                                 <form id="contact-form" class="space-y-4">
                                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                         <div>
-                                            <label for="requirement" class="block text-sm font-medium text-white/80 mb-1">Your Requirement</label>
+                                            <label for="name" class="block text-sm font-medium text-white/80 mb-1">Full Name</label>
+                                            <input type="text" id="name" name="name" required class="w-full bg-white/20 border-white/30 border rounded-lg py-2 px-3 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-[#ff9e02]">
+                                        </div>
+                                        <div>
+                                            <label for="email" class="block text-sm font-medium text-white/80 mb-1">Work Email</label>
+                                            <input type="email" id="email" name="email" required class="w-full bg-white/20 border-white/30 border rounded-lg py-2 px-3 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-[#ff9e02]">
+                                        </div>
+                                    </div>
+                                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                        <div>
+                                            <label for="phone" class="block text-sm font-medium text-white/80 mb-1">Phone Number</label>
+                                            <input type="tel" id="phone" name="phone" required class="w-full bg-white/20 border-white/30 border rounded-lg py-2 px-3 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-[#ff9e02]">
+                                        </div>
+                                        <div>
+                                            <label for="company" class="block text-sm font-medium text-white/80 mb-1">Company Name</label>
+                                            <input type="text" id="company" name="company" required class="w-full bg-white/20 border-white/30 border rounded-lg py-2 px-3 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-[#ff9e02]">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label for="requirement" class="block text-sm font-medium text-white/80 mb-1">Your Requirement</label>
                                         <textarea id="requirement" name="requirement" rows="3" required class="w-full bg-white/20 border-white/30 border rounded-lg py-2 px-3 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-[#ff9e02]"></textarea>
                                     </div>
                                     <button type="submit" class="w-full bg-[#ff9e02] text-white font-bold px-10 py-3 rounded-lg hover:bg-[#e68e00] transition-all duration-300 transform hover:scale-105 shadow-lg">
