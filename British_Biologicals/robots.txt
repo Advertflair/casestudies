@@ -1,0 +1,33 @@
+# Robots.txt for British Biologicals Case Study
+# https://casestudies.advertflair.com/British_Biologicals/
+
+User-agent: *
+Allow: /
+
+# Allow all major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# Disallow access to sensitive directories
+Disallow: /Assets/
+Disallow: /*.log$
+Disallow: /tmp/
+Disallow: /cache/
+
+# Sitemap location
+Sitemap: https://casestudies.advertflair.com/British_Biologicals/sitemap.xml
+
+# Main case studies sitemap
+Sitemap: https://casestudies.advertflair.com/sitemap.xml
+
+# Crawl delay (optional - adjust as needed)
+Crawl-delay: 1
