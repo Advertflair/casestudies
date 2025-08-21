@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veronique Gabai Case Study | Advertflair</title>
+    <link rel="icon" href="/DHEN/Assets/images/favicon_adv.ico" type="image/x-icon">
+    <link rel="icon" href="/DHEN/Assets/images/favicon_adv.png" type="image/png">
+    <link rel="icon" href="/DHEN/Assets/images/favicon_adv.svg" type="image/svg+xml">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* slate-50 */
+            color: #1e293b; /* slate-800 */
+        }
+        /* Custom gradient for hero section */
+        .gradient-bg {
+            background: linear-gradient(135deg, #4934bc 0%, #3a2a9a 100%);
+        }
+        /* Custom gradient for text */
+        .text-gradient {
+            background: linear-gradient(90deg, #fe2267, #ff9e02);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+        /* Custom card styling */
+        .stat-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .stat-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+        /* Scroll behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Platform demo styling */
+        .platform-demo {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            border: 2px solid #e2e8f0;
+        }
+        /* Luxury gold accents */
+        .luxury-gold {
+            background: linear-gradient(45deg, #f7931e, #ffd700, #f7931e);
+        }
+        .luxury-card {
+            background: linear-gradient(135deg, rgba(247, 147, 30, 0.1) 0%, rgba(255, 215, 0, 0.1) 100%);
+            border: 1px solid rgba(247, 147, 30, 0.2);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="bg-white fixed top-0 left-0 right-0 z-50 shadow-sm">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <a href="https://casestudies.advertflair.com/">
+                        <img src="https://cdn.prod.website-files.com/6336da2704c4776a047e9529/6336da2704c47740ce7e9542_image%201.webp" alt="Advertflair Logo" class="h-10 w-auto">
+                    </a>
+                </div>
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#challenge" class="text-slate-600 hover:text-[#4934bc] transition-colors">The Challenge</a>
+                    <a href="#solution" class="text-slate-600 hover:text-[#4934bc] transition-colors">Our Solution</a>
+                    <a href="#showcase" class="text-slate-600 hover:text-[#4934bc] transition-colors">Visual Showcase</a>
+                    <a href="#impact" class="text-slate-600 hover:text-[#4934bc] transition-colors">Impact</a>
+                </nav>
+                <a href="#contact" class="hidden md:inline-block bg-[#4934bc] text-white font-semibold px-5 py-2 rounded-lg hover:bg-[#3a2a9a] transition-all duration-300 transform hover:scale-105">
+                    Let's Talk
+                </a>
+                <button id="mobile-menu-button" class="md:hidden text-slate-800">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white px-6 pb-4">
+             <a href="#challenge" class="block py-2 text-slate-600 hover:text-[#4934bc]">The Challenge</a>
+             <a href="#solution" class="block py-2 text-slate-600 hover:text-[#4934bc]">Our Solution</a>
+             <a href="#showcase" class="block py-2 text-slate-600 hover:text-[#4934bc]">Visual Showcase</a>
+             <a href="#impact" class="block py-2 text-slate-600 hover:text-[#4934bc]">Impact</a>
+             <a href="#contact" class="block mt-4 w-full text-center bg-[#4934bc] text-white font-semibold px-5 py-2 rounded-lg hover:bg-[#3a2a9a]">Let's Talk</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="gradient-bg text-white pt-32 pb-20">
+            <div class="container mx-auto px-6 text-center">
+                <span class="text-sm font-bold uppercase tracking-widest text-white/70">Case Study: Veronique Gabai</span>
+                <h1 class="text-4xl md:text-6xl font-extrabold mt-4 mb-6 leading-tight">
+                    Crafting Luxury Through Digital Artistry
+                </h1>
+                <p class="max-w-3xl mx-auto text-lg md:text-xl text-white/80 mb-12">
+                    How we transformed a single product shot into an entire luxury fragrance campaign with photorealistic 3D renders that capture the essence of French elegance and sophistication.
+                </p>
+                <div class="flex justify-center space-x-4">
+                    <a href="#showcase" class="bg-[#fe2267] text-white font-bold px-8 py-4 rounded-lg hover:bg-[#e01b58] transition-all duration-300 transform hover:scale-105">
+                        Explore Visual Collection
+                    </a>
+                    <a href="#solution" class="bg-white/20 text-white font-bold px-8 py-4 rounded-lg hover:bg-white/30 transition-all duration-300">
+                        See The Process
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Client Info Bar -->
+        <section class="bg-white py-8 shadow-md -mt-10 relative z-10 mx-4 md:mx-auto max-w-6xl rounded-xl">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                    <div class="flex flex-col items-center">
+                        <i data-lucide="sparkles" class="w-8 h-8 mb-2 text-amber-500"></i>
+                        <h3 class="font-bold text-slate-500 text-sm uppercase">Industry</h3>
+                        <p class="text-lg font-semibold text-slate-800">Luxury Fragrance</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <i data-lucide="camera" class="w-8 h-8 mb-2 text-amber-500"></i>
+                        <h3 class="font-bold text-slate-500 text-sm uppercase">Service</h3>
+                        <p class="text-lg font-semibold text-slate-800">3D Product Renders</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                         <i data-lucide="palette" class="w-8 h-8 mb-2 text-amber-500"></i>
+                        <h3 class="font-bold text-slate-500 text-sm uppercase">Focus</h3>
+                        <p class="text-lg font-semibold text-slate-800">Lifestyle Campaigns</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <i data-lucide="layers" class="w-8 h-8 mb-2 text-amber-500"></i>
+                        <h3 class="font-bold text-slate-500 text-sm uppercase">Output</h3>
+                        <p class="text-lg font-semibold text-slate-800">Multi-Environment Assets</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Challenge Section -->
+        <section id="challenge" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">The <span class="text-gradient">Challenge</span>: Elevating Luxury Fragrance Marketing</h2>
+                    <p class="text-lg text-slate-600">
+                        Veronique Gabai, a prestigious French fragrance house, needed to create compelling visual content for their luxury perfume line without the constraints and costs of traditional photography shoots.
+                    </p>
+                </div>
+                <div class="mt-16 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Challenge Card 1 -->
+                    <div class="luxury-card p-6 rounded-xl shadow-lg">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-amber-500/20 mb-4">
+                            <i data-lucide="dollar-sign" class="text-amber-600"></i>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2">Expensive Photo Shoots</h3>
+                        <p class="text-slate-600">Traditional luxury fragrance photography requires elaborate sets, perfect lighting, and multiple shoot days for different ambiances—making each campaign costly.</p>
+                    </div>
+                    <!-- Challenge Card 2 -->
+                    <div class="luxury-card p-6 rounded-xl shadow-lg">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-amber-500/20 mb-4">
+                            <i data-lucide="clock" class="text-amber-600"></i>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2">Limited Creative Flexibility</h3>
+                        <p class="text-slate-600">Once a luxury photo shoot is complete, making changes or exploring new creative directions requires entirely new productions.</p>
+                    </div>
+                    <!-- Challenge Card 3 -->
+                    <div class="luxury-card p-6 rounded-xl shadow-lg">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-amber-500/20 mb-4">
+                            <i data-lucide="image" class="text-amber-600"></i>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2">Multi-Environment Needs</h3>
+                        <p class="text-slate-600">Luxury fragrance marketing requires diverse visual storytelling—from intimate lifestyle moments to dramatic artistic expressions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Solution Section -->
+        <section id="solution" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Our <span class="text-gradient">Solution</span>: Photorealistic 3D Artistry</h2>
+                    <p class="text-lg text-slate-600 mb-12">
+                        We created a comprehensive library of photorealistic 3D renders that capture the essence of Veronique Gabai's luxury fragrance in multiple environments and moods, providing unlimited creative possibilities at a fraction of traditional photography costs.
+                    </p>
+                </div>
+
+                <!-- Process Overview -->
+                <div class="max-w-6xl mx-auto mb-16">
+                    <h3 class="text-2xl font-bold text-center mb-8">From Single Product Shot to Luxury Campaign</h3>
+                    
+                    <!-- Process Steps -->
+                    <div class="grid md:grid-cols-3 gap-8 mb-12">
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i data-lucide="camera" class="w-8 h-8 text-amber-600"></i>
+                            </div>
+                            <h4 class="font-bold text-lg mb-2">Product Analysis</h4>
+                            <p class="text-slate-600">We studied the original Veronique Gabai perfume bottle, analyzing every detail from the gold accents to the crystal clarity of the glass.</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i data-lucide="box" class="w-8 h-8 text-amber-600"></i>
+                            </div>
+                            <h4 class="font-bold text-lg mb-2">3D Recreation</h4>
+                            <p class="text-slate-600">Created precise 3D models with photorealistic materials, ensuring every texture, reflection, and detail matched the luxury aesthetic.</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i data-lucide="sparkles" class="w-8 h-8 text-amber-600"></i>
+                            </div>
+                            <h4 class="font-bold text-lg mb-2">Environment Design</h4>
+                            <p class="text-slate-600">Crafted multiple luxury environments that tell different stories while maintaining the sophisticated brand identity.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Technology Stack -->
+                <div class="grid md:grid-cols-3 gap-8 text-center">
+                    <div class="flex flex-col items-center">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full luxury-gold mb-4">
+                            <i data-lucide="gem" class="w-8 h-8 text-white"></i>
+                        </div>
+                        <h3 class="font-bold text-xl mb-2">Luxury Material Accuracy</h3>
+                        <p class="text-slate-600">Precise recreation of gold finishes, crystal glass, and textured surfaces that define luxury fragrance packaging.</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full luxury-gold mb-4">
+                            <i data-lucide="sun" class="w-8 h-8 text-white"></i>
+                        </div>
+                        <h3 class="font-bold text-xl mb-2">Advanced Lighting</h3>
+                        <p class="text-slate-600">Studio-quality lighting setups for each environment, from soft romantic glows to dramatic high-contrast scenes.</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full luxury-gold mb-4">
+                            <i data-lucide="layers" class="w-8 h-8 text-white"></i>
+                        </div>
+                        <h3 class="font-bold text-xl mb-2">Multiple Formats</h3>
+                        <p class="text-slate-600">Optimized outputs for digital campaigns, print advertising, social media, and e-commerce platforms.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- Visual Showcase Section -->
+        <section id="showcase" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Visual <span class="text-gradient">Showcase</span>: Multiple Environments</h2>
+                    <p class="text-lg text-slate-600">
+                        From one simple product shot to an entire luxury campaign across diverse environments, each render tells a unique story while maintaining the sophisticated elegance that defines the Veronique Gabai brand.
+                    </p>
+                </div>
+
+                <!-- Input vs Output Showcase -->
+                <div class="max-w-7xl mx-auto">
+                    
+                    <!-- Input Section -->
+                    <div class="bg-slate-100 rounded-2xl shadow-lg overflow-hidden mb-12">
+                        <div class="p-6 bg-slate-200 border-b">
+                            <div class="text-center">
+                                <h3 class="text-xl font-bold text-slate-800 mb-2">Original Input</h3>
+                                <p class="text-slate-600">Simple product shot provided by the client</p>
+                            </div>
+                        </div>
+                        <div class="p-8 text-center">
+                            <div class="inline-block">
+                                <img src="/Veronique_gabai/Assets/Images/Input_1.webp" alt="Veronique Gabai - Original Input" class="rounded-lg shadow-lg">
+                                <p class="text-slate-500 text-sm mt-4 italic">Basic product photography</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Arrow Down -->
+                    <div class="text-center mb-12">
+                        <div class="w-12 h-12 bg-gradient-to-r from-[#fe2267] to-[#ff9e02] rounded-full flex items-center justify-center mx-auto">
+                            <i data-lucide="arrow-down" class="w-6 h-6 text-white"></i>
+                        </div>
+                        <p class="text-lg font-semibold text-slate-700 mt-4">Transformed Into</p>
+                    </div>
+                    
+                    <!-- Output Collections -->
+                    <div class="grid lg:grid-cols-2 gap-8">
+                        
+                        <!-- Abundance Collection -->
+                        <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
+                            <div class="p-6 bg-gradient-to-r from-orange-50 to-yellow-50 border-b">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <h3 class="text-xl font-bold text-slate-800 mb-1">Abundance Collection</h3>
+                                        <p class="text-slate-600 text-sm">Rich, warm environments celebrating luxury</p>
+                                    </div>
+                                    <div class="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center">
+                                        <i data-lucide="sun" class="w-5 h-5 text-orange-600"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <img src="/Veronique_gabai/Assets/Images/1red roses.webp" alt="Veronique Gabai - Abundance Collection" class="w-full rounded-lg shadow-lg mb-4">
+                                <p class="text-slate-600 text-center text-sm italic">Warm lighting and rich textures create luxury and opulence</p>
+                            </div>
+                        </div>
+
+                        <!-- Glamour Collection -->
+                        <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
+                            <div class="p-6 bg-gradient-to-r from-pink-50 to-rose-50 border-b">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <h3 class="text-xl font-bold text-slate-800 mb-1">Glamour Collection</h3>
+                                        <p class="text-slate-600 text-sm">Elegant scenes with floral and romantic elements</p>
+                                    </div>
+                                    <div class="w-10 h-10 bg-pink-100 rounded-full flex items-center justify-center">
+                                        <i data-lucide="heart" class="w-5 h-5 text-pink-600"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <img src="/Veronique_gabai/Assets/Images/Glamor_collection.webp" alt="Veronique Gabai - Glamour Collection" class="w-full rounded-lg shadow-lg mb-4">
+                                <p class="text-slate-600 text-center text-sm italic">Romantic florals capture the essence of feminine elegance</p>
+                            </div>
+                        </div>
+
+                        <!-- Lifestyle Collection -->
+                        <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
+                            <div class="p-6 bg-gradient-to-r from-blue-50 to-cyan-50 border-b">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <h3 class="text-xl font-bold text-slate-800 mb-1">Lifestyle Collection</h3>
+                                        <p class="text-slate-600 text-sm">Contemporary interpretations for modern luxury living</p>
+                                    </div>
+                                    <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
+                                        <i data-lucide="droplets" class="w-5 h-5 text-blue-600"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <img src="/Veronique_gabai/Assets/Images/1SUN _light1.webp" alt="Veronique Gabai - Lifestyle Collection" class="w-full rounded-lg shadow-lg mb-4">
+                                <p class="text-slate-600 text-center text-sm italic">Fresh, contemporary settings for modern luxury consumers</p>
+                            </div>
+                        </div>
+
+                        <!-- Splash Collection -->
+                        <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
+                            <div class="p-6 bg-gradient-to-r from-cyan-50 to-teal-50 border-b">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <h3 class="text-xl font-bold text-slate-800 mb-1">Splash Collection</h3>
+                                        <p class="text-slate-600 text-sm">Dynamic water elements creating movement and energy</p>
+                                    </div>
+                                    <div class="w-10 h-10 bg-cyan-100 rounded-full flex items-center justify-center">
+                                        <i data-lucide="waves" class="w-5 h-5 text-cyan-600"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <img src="/Veronique_gabai/Assets/Images/new water.webp" alt="Veronique Gabai - Splash Collection" class="w-full rounded-lg shadow-lg mb-4">
+                                <p class="text-slate-600 text-center text-sm italic">Dramatic water elements add movement to luxury storytelling</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Impact Section -->
+        <section id="impact" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">The <span class="text-gradient">Impact</span>: Luxury Without Limits</h2>
+                    <p class="text-lg text-slate-600 mb-16">
+                        Our 3D rendering solution provided Veronique Gabai with an unprecedented level of creative freedom and cost efficiency for their luxury fragrance marketing.
+                    </p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Impact Card 1 -->
+                    <div class="stat-card luxury-card p-8 rounded-2xl shadow-xl">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-amber-500/20 mb-6">
+                           <i data-lucide="image" class="w-8 h-8 text-amber-600"></i>
+                        </div>
+                        <p class="text-3xl font-extrabold text-slate-800">10+</p>
+                        <h3 class="font-semibold text-xl mt-2">Environment Variations</h3>
+                        <p class="text-slate-600 mt-2">Created multiple luxury environments from a single product input, providing extensive creative possibilities.</p>
+                    </div>
+                    <!-- Impact Card 2 -->
+                    <div class="stat-card luxury-card p-8 rounded-2xl shadow-xl">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-amber-500/20 mb-6">
+                            <i data-lucide="zap" class="w-8 h-8 text-amber-600"></i>
+                        </div>
+                        <p class="text-3xl font-extrabold text-slate-800">75%</p>
+                        <h3 class="font-semibold text-xl mt-2">Cost Reduction</h3>
+                        <p class="text-slate-600 mt-2">Significant savings compared to traditional luxury fragrance photography while maintaining premium quality.</p>
+                    </div>
+                    <!-- Impact Card 3 -->
+                    <div class="stat-card luxury-card p-8 rounded-2xl shadow-xl">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-amber-500/20 mb-6">
+                            <i data-lucide="infinity" class="w-8 h-8 text-amber-600"></i>
+                        </div>
+                        <p class="text-3xl font-extrabold text-slate-800">Unlimited</p>
+                        <h3 class="font-semibold text-xl mt-2">Creative Freedom</h3>
+                        <p class="text-slate-600 mt-2">Ability to explore new concepts and environments without additional production costs or time constraints.</p>
+                    </div>
+                    <!-- Impact Card 4 -->
+                    <div class="stat-card luxury-card p-8 rounded-2xl shadow-xl">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-amber-500/20 mb-6">
+                            <i data-lucide="calendar" class="w-8 h-8 text-amber-600"></i>
+                        </div>
+                        <p class="text-3xl font-extrabold text-slate-800">5x</p>
+                        <h3 class="font-semibold text-xl mt-2">Faster Delivery</h3>
+                        <p class="text-slate-600 mt-2">Rapid content creation enabling quick campaign launches and seasonal adaptations.</p>
+                    </div>
+                </div>
+
+                <!-- Success Story -->
+                <div class="mt-20 bg-gradient-to-r from-amber-50 to-yellow-50 rounded-2xl p-8 md:p-12 border border-amber-200">
+                    <div class="text-center">
+                        <i data-lucide="award" class="w-12 h-12 text-amber-600 mx-auto mb-6"></i>
+                        <blockquote class="text-xl md:text-2xl font-medium text-slate-700 mb-6">
+                            "The 3D renders perfectly captured the luxury essence of our fragrances. We now have a complete visual library that tells our brand story across multiple touchpoints—from digital campaigns to retail displays."
+                        </blockquote>
+                        <cite class="text-lg font-semibold text-amber-700">Veronique Gabai Creative Team</cite>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section id="contact" class="bg-white">
+            <div class="container mx-auto px-6 py-20">
+                <div class="relative gradient-bg rounded-2xl p-10 md:p-16 text-white overflow-hidden">
+                    <div class="absolute -top-10 -right-10 w-48 h-48 bg-white/10 rounded-full"></div>
+                    <div class="absolute -bottom-16 -left-10 w-40 h-40 bg-white/10 rounded-full"></div>
+                    <div class="relative z-10 grid md:grid-cols-2 gap-12 items-center">
+                        <div class="text-center md:text-left">
+                             <h2 class="text-3xl md:text-5xl font-bold mb-4">Ready to Elevate Your Luxury Brand?</h2>
+                             <p class="max-w-2xl text-lg text-white/80">
+                                Like Veronique Gabai, transform your product photography into stunning luxury campaigns. Whether you're in fragrance, cosmetics, jewelry, or any luxury sector, we create photorealistic 3D renders that capture your brand's essence across unlimited environments.
+                             </p>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-sm p-8 rounded-xl">
+                            <div id="form-container">
+                                <form id="contact-form" class="space-y-4">
+                                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                        <div>
+                                            <label for="name" class="block text-sm font-medium text-white/80 mb-1">Full Name</label>
+                                            <input type="text" id="name" name="name" required class="w-full bg-white/20 border-white/30 border rounded-lg py-2 px-3 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-[#ff9e02]">
+                                        </div>
+                                        <div>
+                                            <label for="email" class="block text-sm font-medium text-white/80 mb-1">Work Email</label>
+                                            <input type="email" id="email" name="email" required class="w-full bg-white/20 border-white/30 border rounded-lg py-2 px-3 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-[#ff9e02]">
+                                        </div>
+                                    </div>
+                                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                        <div>
+                                            <label for="phone" class="block text-sm font-medium text-white/80 mb-1">Phone Number</label>
+                                            <input type="tel" id="phone" name="phone" required class="w-full bg-white/20 border-white/30 border rounded-lg py-2 px-3 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-[#ff9e02]">
+                                        </div>
+                                        <div>
+                                            <label for="company" class="block text-sm font-medium text-white/80 mb-1">Company Name</label>
+                                            <input type="text" id="company" name="company" required class="w-full bg-white/20 border-white/30 border rounded-lg py-2 px-3 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-[#ff9e02]">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label for="requirement" class="block text-sm font-medium text-white/80 mb-1">Your Project Requirements</label>
+                                        <textarea id="requirement" name="requirement" rows="3" required class="w-full bg-white/20 border-white/30 border rounded-lg py-2 px-3 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-[#ff9e02]" placeholder="Tell us about your luxury product visualization needs..."></textarea>
+                                    </div>
+                                    <button type="submit" class="w-full bg-[#ff9e02] text-white font-bold px-10 py-3 rounded-lg hover:bg-[#e68e00] transition-all duration-300 transform hover:scale-105 shadow-lg">
+                                        Create Your Luxury Visual Campaign
+                                    </button>
+                                </form>
+                            </div>
+                            <div id="form-message" class="hidden text-center">
+                                <i data-lucide="check-circle" class="w-16 h-16 text-green-400 mx-auto mb-4"></i>
+                                <h3 class="text-2xl font-bold mb-2">Thank You!</h3>
+                                <p class="text-white/80">Your message has been sent. We'll be in touch soon to discuss your luxury visualization project.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-slate-400 py-12">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex items-center justify-center space-x-2 mb-4">
+                 <img src="https://cdn.prod.website-files.com/6336da2704c4776a047e9529/6336da2704c47740ce7e9542_image%201.webp" alt="Advertflair Logo" class="h-10 w-auto filter invert brightness-0">
+            </div>
+            <p>Your Digital Transformation Partner</p>
+            <p class="mt-4 text-sm">&copy; 2025 Advertflair. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Simple script for mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Close mobile menu when a link is clicked
+        const mobileMenuLinks = mobileMenu.getElementsByTagName('a');
+        for (let link of mobileMenuLinks) {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        }
+
+        // Contact Form Handler
+        const contactForm = document.getElementById('contact-form');
+        const formContainer = document.getElementById('form-container');
+        const formMessage = document.getElementById('form-message');
+
+        contactForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // The browser's built-in `required` attribute handles validation.
+            // If the form is valid, this event will fire.
+            
+            // On success, hide form and show message
+            formContainer.classList.add('hidden');
+            formMessage.classList.remove('hidden');
+            // Re-render icons in the success message if needed
+            lucide.createIcons();
+        });
+    </script>
+
+</body>
+</html>
