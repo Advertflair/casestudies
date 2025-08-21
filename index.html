@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Case Studies - AdvertFlair AI Solutions</title>
-    <link rel="icon" href="/DHEN/Assets/images/favicon_adv.ico" type="image/x-icon">
-    <link rel="icon" href="/DHEN/Assets/images/favicon_adv.png" type="image/png">
-    <link rel="icon" href="/DHEN/Assets/images/favicon_adv.svg" type="image/svg+xml">
     
     <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,6 +30,7 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
+            text-fill-color: transparent;
         }
         .card-hover {
             transition: all 0.3s ease;
@@ -41,12 +39,18 @@
             transform: translateY(-8px);
             box-shadow: 0 20px 40px rgba(0,0,0,0.1);
         }
-        .metric-counter {
-            font-size: 2.5rem;
-            font-weight: 700;
-        }
         html {
             scroll-behavior: smooth;
+        }
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .animated-gradient-bg {
+            background: linear-gradient(-45deg, #4934bc, #fe2267, #ff9e02);
+            background-size: 200% 200%;
+            animation: gradientAnimation 8s ease infinite;
         }
     </style>
 </head>
@@ -81,81 +85,78 @@
         </div>
     </header>
 
-  <!-- Hero Section -->
-<section class="gradient-bg text-white pt-32 pb-20">
-    <div class="container mx-auto px-6 text-center">
-        <span class="text-sm font-bold uppercase tracking-widest text-white/70">Portfolio Showcase</span>
-        <h1 class="text-4xl md:text-6xl font-extrabold mt-4 mb-6 leading-tight">
-            Real Results, Real Clients, <span class="text-gradient bg-gradient-to-r from-[#fe2267] to-[#ff9e02] bg-clip-text text-transparent">Real ROI</span>
-        </h1>
-        <p class="max-w-3xl mx-auto text-lg md:text-xl text-white/80 mb-12">
-            See how leading companies across fashion, art logistics, and manufacturing are transforming their visual content and business outcomes with our AI-powered solutions.
-        </p>
-        <div class="flex justify-center space-x-4">
-            <a href="#case-studies" class="bg-[#fe2267] text-white font-bold px-8 py-4 rounded-lg hover:bg-[#e01b58] transition-all duration-300 transform hover:scale-105">
-                Explore Case Studies
-            </a>
-            <a href="#contact" class="bg-white/20 text-white font-bold px-8 py-4 rounded-lg hover:bg-white/30 transition-all duration-300">
-                Request Demo
-            </a>
+    <!-- Hero Section -->
+    <section class="animated-gradient-bg text-white pt-32 pb-20">
+        <div class="container mx-auto px-6 text-center">
+            <span class="text-sm font-bold uppercase tracking-widest text-white/70">Portfolio Showcase</span>
+            <h1 class="text-4xl md:text-6xl font-extrabold mt-4 mb-6 leading-tight">
+                Real Results, Real Clients,<br><span class="text-white">Real ROI</span>
+            </h1>
+            <p class="max-w-3xl mx-auto text-lg md:text-xl text-white/80 mb-12">
+                See how leading companies across fashion, art logistics, and manufacturing are transforming their visual content and business outcomes with our AI-powered solutions.
+            </p>
+            <div class="flex justify-center space-x-4">
+                <a href="#case-studies" class="bg-white/20 text-white font-bold px-8 py-4 rounded-lg hover:bg-white/30 transition-all duration-300">
+                    Explore Case Studies
+                </a>
+                <a href="#contact" class="bg-[#fe2267] text-white font-bold px-8 py-4 rounded-lg hover:bg-[#e01b58] transition-all duration-300 transform hover:scale-105">
+                    Request Demo
+                </a>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Portfolio Impact Bar -->
-<section class="bg-white py-8 shadow-md -mt-10 relative z-10 mx-4 md:mx-auto max-w-6xl rounded-xl">
-    <div class="container mx-auto px-6">
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div class="flex flex-col items-center">
-                <i data-lucide="target" class="w-8 h-8 mb-2 text-[#fe2267]"></i>
-                <h3 class="font-bold text-slate-500 text-sm uppercase">Accuracy</h3>
-                <p class="text-lg font-semibold text-slate-800">98% AI Texture</p>
-            </div>
-            <div class="flex flex-col items-center">
-                <i data-lucide="zap" class="w-8 h-8 mb-2 text-[#ff9e02]"></i>
-                <h3 class="font-bold text-slate-500 text-sm uppercase">Speed</h3>
-                <p class="text-lg font-semibold text-slate-800">10x Faster</p>
-            </div>
-            <div class="flex flex-col items-center">
-                <i data-lucide="trending-up" class="w-8 h-8 mb-2 text-[#4934bc]"></i>
-                <h3 class="font-bold text-slate-500 text-sm uppercase">Engagement</h3>
-                <p class="text-lg font-semibold text-slate-800">3x Performance</p>
-            </div>
-            <div class="flex flex-col items-center">
-                <i data-lucide="trending-down" class="w-8 h-8 mb-2 text-green-600"></i>
-                <h3 class="font-bold text-slate-500 text-sm uppercase">Cost</h3>
-                <p class="text-lg font-semibold text-slate-800">1/3 Traditional</p>
+    <!-- Portfolio Impact Bar -->
+    <section id="overview" class="bg-white py-8 shadow-md -mt-10 relative z-10 mx-4 md:mx-auto max-w-6xl rounded-xl">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="flex flex-col items-center">
+                    <i data-lucide="target" class="w-8 h-8 mb-2 text-[#fe2267]"></i>
+                    <h3 class="font-bold text-slate-500 text-sm uppercase">Accuracy</h3>
+                    <p class="text-lg font-semibold text-slate-800">98% AI Texture</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i data-lucide="zap" class="w-8 h-8 mb-2 text-[#ff9e02]"></i>
+                    <h3 class="font-bold text-slate-500 text-sm uppercase">Speed</h3>
+                    <p class="text-lg font-semibold text-slate-800">10x Faster</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i data-lucide="trending-up" class="w-8 h-8 mb-2 text-[#4934bc]"></i>
+                    <h3 class="font-bold text-slate-500 text-sm uppercase">Engagement</h3>
+                    <p class="text-lg font-semibold text-slate-800">3x Performance</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i data-lucide="trending-down" class="w-8 h-8 mb-2 text-[#4934bc]"></i>
+                    <h3 class="font-bold text-slate-500 text-sm uppercase">Cost</h3>
+                    <p class="text-lg font-semibold text-slate-800">1/3 Traditional</p>
+                </div>
             </div>
         </div>
-    </div>
-</section>
-<!-- Case Studies Grid -->
-<section id="case-studies" class="py-20 bg-slate-50">
-    <div class="container mx-auto px-6">
-        <div class="text-center mb-16">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4">Featured Case Studies</h2>
-            <p class="text-lg text-slate-600">Deep dive into how our solutions transformed these businesses across different industries</p>
-        </div>
+    </section>
+    
+    <!-- Case Studies Grid -->
+    <section id="case-studies" class="py-20 bg-slate-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Featured Case Studies</h2>
+                <p class="text-lg text-slate-600">Deep dive into how our solutions transformed these businesses across different industries</p>
+            </div>
 
-        <div class="grid lg:grid-cols-3 gap-8">
-            
-            <!-- Dillards Case Study -->
-            <div class="card-hover bg-white rounded-2xl shadow-lg overflow-hidden border border-slate-200/50">
-                <div class="h-72 relative overflow-hidden">
-                    <!-- Background Image -->
-                    <img src="/Dillards/Assets/images/Option-1.webp" alt="Dillards Fashion Background" class="absolute inset-0 w-full h-full object-cover">
-                    <!-- Subtle Dark Overlay -->
-                    <div class="absolute inset-0 bg-black/40"></div>
-                    <!-- Content -->
-                    <div class="relative text-white text-center z-10 flex items-center justify-center h-full">
-                        <div class="bg-black/30 backdrop-blur-sm rounded-xl px-6 py-4 border border-white/20">
-                            <h3 class="text-2xl font-bold mb-2 text-white drop-shadow-lg">Dillards</h3>
-                            <span class="px-3 py-1 bg-white/90 text-slate-800 rounded-full text-sm font-medium">Fashion & E-commerce</span>
+            <div class="grid lg:grid-cols-3 gap-8">
+                
+                <!-- Dillards Case Study -->
+                <div class="card-hover bg-white rounded-2xl shadow-lg overflow-hidden border border-slate-200/50 flex flex-col">
+                    <div class="h-72 relative overflow-hidden">
+                        <img src="https://placehold.co/600x400/e2e8f0/475569?text=Dillards" alt="Dillards Fashion Background" class="absolute inset-0 w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black/40"></div>
+                        <div class="relative text-white text-center z-10 flex items-center justify-center h-full">
+                            <div class="bg-black/30 backdrop-blur-sm rounded-xl px-6 py-4 border border-white/20">
+                                <h3 class="text-2xl font-bold mb-2 text-white drop-shadow-lg">Dillards</h3>
+                                <span class="px-3 py-1 bg-white/90 text-slate-800 rounded-full text-sm font-medium">Fashion & E-commerce</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="p-6">
-                    <div class="mb-4">
+                    <div class="p-6 flex flex-col flex-grow">
                         <div class="flex items-center space-x-4 mb-3">
                             <div class="bg-[#4934bc]/10 p-2 rounded-lg">
                                 <i data-lucide="camera" class="w-5 h-5 text-[#4934bc]"></i>
@@ -168,48 +169,43 @@
                         <p class="text-slate-600 text-sm mb-4">
                             <strong>Solution:</strong> Custom Glam AI and Style AI platforms delivering unlimited creative variations with 98% texture accuracy—cutting costs by 2/3rds and reducing time-to-market by 10x.
                         </p>
-                    </div>
-                    <div class="border-t pt-4">
-                        <div class="grid grid-cols-2 gap-4 mb-4">
-                            <div class="text-center">
-                                <div class="text-lg font-bold text-[#fe2267]">98%</div>
-                                <div class="text-xs text-slate-500">Texture Accuracy</div>
+                        <div class="flex-grow"></div>
+                        <div class="border-t pt-4">
+                            <div class="grid grid-cols-2 gap-4 mb-4">
+                                <div class="text-center">
+                                    <div class="text-lg font-bold text-[#fe2267]">98%</div>
+                                    <div class="text-xs text-slate-500">Texture Accuracy</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-lg font-bold text-[#ff9e02]">10x</div>
+                                    <div class="text-xs text-slate-500">Faster Turnaround</div>
+                                </div>
                             </div>
-                            <div class="text-center">
-                                <div class="text-lg font-bold text-[#ff9e02]">10x</div>
-                                <div class="text-xs text-slate-500">Faster Turnaround</div>
-                            </div>
+                            <a href="https://casestudies.advertflair.com/Dillards/" class="block w-full text-center bg-[#4934bc] text-white py-3 rounded-lg font-semibold hover:bg-[#3a2a9a] transition-all duration-300">
+                                Read Full Case Study
+                            </a>
                         </div>
-                        <a href="https://casestudies.advertflair.com/Dillards/" 
-                           class="block w-full text-center bg-[#4934bc] text-white py-3 rounded-lg font-semibold hover:bg-[#3a2a9a] transition-all duration-300">
-                            Read Full Case Study
-                        </a>
                     </div>
                 </div>
-            </div>
 
-            <!-- Crozier Case Study -->
-            <div class="card-hover bg-white rounded-2xl shadow-lg overflow-hidden border border-slate-200/50">
-                <div class="h-72 relative overflow-hidden">
-                    <!-- Background Image -->
-                    <img src="/Crozier/Assets/images/Crate_after.webp" alt="Crozier Art Storage Background" class="absolute inset-0 w-full h-full object-cover">
-                    <!-- Subtle Dark Overlay -->
-                    <div class="absolute inset-0 bg-black/40"></div>
-                    <!-- Content -->
-                    <div class="relative text-white text-center z-10 flex items-center justify-center h-full">
-                        <div class="bg-black/30 backdrop-blur-sm rounded-xl px-6 py-4 border border-white/20">
-                            <h3 class="text-2xl font-bold mb-2 text-white drop-shadow-lg">Crozier Fine Arts</h3>
-                            <span class="px-3 py-1 bg-white/90 text-slate-800 rounded-full text-sm font-medium">Art Storage & Transport</span>
+                <!-- Crozier Case Study -->
+                <div class="card-hover bg-white rounded-2xl shadow-lg overflow-hidden border border-slate-200/50 flex flex-col">
+                    <div class="h-72 relative overflow-hidden">
+                        <img src="https://placehold.co/600x400/e2e8f0/475569?text=Crozier" alt="Crozier Art Storage Background" class="absolute inset-0 w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black/40"></div>
+                        <div class="relative text-white text-center z-10 flex items-center justify-center h-full">
+                            <div class="bg-black/30 backdrop-blur-sm rounded-xl px-6 py-4 border border-white/20">
+                                <h3 class="text-2xl font-bold mb-2 text-white drop-shadow-lg">Crozier Fine Arts</h3>
+                                <span class="px-3 py-1 bg-white/90 text-slate-800 rounded-full text-sm font-medium">Art Storage & Transport</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="p-6">
-                    <div class="mb-4">
+                    <div class="p-6 flex flex-col flex-grow">
                         <div class="flex items-center space-x-4 mb-3">
-                            <div class="bg-amber-100 p-2 rounded-lg">
-                                <i data-lucide="palette" class="w-5 h-5 text-amber-600"></i>
+                            <div class="bg-[#ff9e02]/10 p-2 rounded-lg">
+                                <i data-lucide="palette" class="w-5 h-5 text-[#ff9e02]"></i>
                             </div>
-                            <span class="text-sm font-semibold text-amber-800">Premium Brand Positioning</span>
+                            <span class="text-sm font-semibold text-[#ff9e02]">Premium Brand Positioning</span>
                         </div>
                         <p class="text-slate-600 text-sm mb-4">
                             <strong>Challenge:</strong> Leading art logistics company's outdated imagery failed to communicate their premium positioning and connect with today's art market.
@@ -217,48 +213,43 @@
                         <p class="text-slate-600 text-sm mb-4">
                             <strong>Solution:</strong> Photorealistic 3D asset library transforming trucks, warehouses, and crates into luxury-standard visuals.
                         </p>
-                    </div>
-                    <div class="border-t pt-4">
-                        <div class="grid grid-cols-2 gap-4 mb-4">
-                            <div class="text-center">
-                                <div class="text-lg font-bold text-amber-600">Luxury</div>
-                                <div class="text-xs text-slate-500">Imagery</div>
+                        <div class="flex-grow"></div>
+                        <div class="border-t pt-4">
+                            <div class="grid grid-cols-2 gap-4 mb-4">
+                                <div class="text-center">
+                                    <div class="text-lg font-bold text-[#ff9e02]">Luxury</div>
+                                    <div class="text-xs text-slate-500">Imagery</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-lg font-bold text-[#fe2267]">Premium</div>
+                                    <div class="text-xs text-slate-500">Positioning</div>
+                                </div>
                             </div>
-                            <div class="text-center">
-                                <div class="text-lg font-bold text-orange-600">Premium</div>
-                                <div class="text-xs text-slate-500">Positioning</div>
-                            </div>
+                            <a href="https://casestudies.advertflair.com/Crozier/" class="block w-full text-center bg-gradient-to-r from-[#ff9e02] to-[#fe2267] text-white py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity">
+                                Read Full Case Study
+                            </a>
                         </div>
-                        <a href="https://casestudies.advertflair.com/Crozier/" 
-                           class="block w-full text-center bg-gradient-to-r from-amber-500 to-orange-600 text-white py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity">
-                            Read Full Case Study
-                        </a>
                     </div>
                 </div>
-            </div>
 
-            <!-- DHEN Case Study -->
-            <div class="card-hover bg-white rounded-2xl shadow-lg overflow-hidden border border-slate-200/50">
-                <div class="h-72 relative overflow-hidden">
-                    <!-- Background Image -->
-                    <img src="/DHEN/Assets/images/DEHN Webapp After.gif" alt="DHEN Interactive Experience Background" class="absolute inset-0 w-full h-full object-cover">
-                    <!-- Subtle Dark Overlay -->
-                    <div class="absolute inset-0 bg-black/40"></div>
-                    <!-- Content -->
-                    <div class="relative text-white text-center z-10 flex items-center justify-center h-full">
-                        <div class="bg-black/30 backdrop-blur-sm rounded-xl px-6 py-4 border border-white/20">
-                            <h3 class="text-2xl font-bold mb-2 text-white drop-shadow-lg">DHEN India</h3>
-                            <span class="px-3 py-1 bg-white/90 text-slate-800 rounded-full text-sm font-medium">Electrical Manufacturing</span>
+                <!-- DHEN Case Study -->
+                <div class="card-hover bg-white rounded-2xl shadow-lg overflow-hidden border border-slate-200/50 flex flex-col">
+                    <div class="h-72 relative overflow-hidden">
+                        <img src="https://placehold.co/600x400/e2e8f0/475569?text=DHEN" alt="DHEN Interactive Experience Background" class="absolute inset-0 w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black/40"></div>
+                        <div class="relative text-white text-center z-10 flex items-center justify-center h-full">
+                            <div class="bg-black/30 backdrop-blur-sm rounded-xl px-6 py-4 border border-white/20">
+                                <h3 class="text-2xl font-bold mb-2 text-white drop-shadow-lg">DHEN India</h3>
+                                <span class="px-3 py-1 bg-white/90 text-slate-800 rounded-full text-sm font-medium">Electrical Manufacturing</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="p-6">
-                    <div class="mb-4">
+                    <div class="p-6 flex flex-col flex-grow">
                         <div class="flex items-center space-x-4 mb-3">
-                            <div class="bg-emerald-100 p-2 rounded-lg">
-                                <i data-lucide="monitor" class="w-5 h-5 text-emerald-600"></i>
+                            <div class="bg-[#4934bc]/10 p-2 rounded-lg">
+                                <i data-lucide="monitor" class="w-5 h-5 text-[#4934bc]"></i>
                             </div>
-                            <span class="text-sm font-semibold text-emerald-800">Interactive Product Experience</span>
+                            <span class="text-sm font-semibold text-[#4934bc]">Interactive Product Experience</span>
                         </div>
                         <p class="text-slate-600 text-sm mb-4">
                             <strong>Challenge:</strong> B2B manufacturer struggled with static displays and overwhelmed sales teams at trade shows and expos.
@@ -266,29 +257,29 @@
                         <p class="text-slate-600 text-sm mb-4">
                             <strong>Solution:</strong> Interactive 3D WebApp with 360° product exploration, transforming booth visits into qualified leads.
                         </p>
-                    </div>
-                    <div class="border-t pt-4">
-                        <div class="grid grid-cols-2 gap-4 mb-4">
-                            <div class="text-center">
-                                <div class="text-lg font-bold text-emerald-600">3x</div>
-                                <div class="text-xs text-slate-500">Longer Visits</div>
+                        <div class="flex-grow"></div>
+                        <div class="border-t pt-4">
+                            <div class="grid grid-cols-2 gap-4 mb-4">
+                                <div class="text-center">
+                                    <div class="text-lg font-bold text-[#4934bc]">3x</div>
+                                    <div class="text-xs text-slate-500">Longer Visits</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-lg font-bold text-[#fe2267]">2x</div>
+                                    <div class="text-xs text-slate-500">More Inquiries</div>
+                                </div>
                             </div>
-                            <div class="text-center">
-                                <div class="text-lg font-bold text-teal-600">2x</div>
-                                <div class="text-xs text-slate-500">More Inquiries</div>
-                            </div>
+                            <a href="https://casestudies.advertflair.com/DHEN/" class="block w-full text-center bg-[#4934bc] text-white py-3 rounded-lg font-semibold hover:bg-[#3a2a9a] transition-all duration-300">
+                                Read Full Case Study
+                            </a>
                         </div>
-                        <a href="https://casestudies.advertflair.com/DHEN/" 
-                           class="block w-full text-center bg-gradient-to-r from-emerald-500 to-teal-600 text-white py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity">
-                            Read Full Case Study
-                        </a>
                     </div>
                 </div>
-            </div>
 
+            </div>
         </div>
-    </div>
-</section>
+    </section>
+    
     <!-- Solution Types -->
     <section class="py-20 bg-white">
         <div class="container mx-auto px-6">
@@ -306,22 +297,22 @@
                     <p class="text-sm text-slate-600">Enterprise-grade fashion photography with 98% texture accuracy</p>
                 </div>
                 <div class="text-center p-6 bg-slate-50 rounded-xl border border-slate-200/50">
-                    <div class="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                        <i data-lucide="box" class="w-6 h-6 text-amber-600"></i>
+                    <div class="w-12 h-12 bg-[#ff9e02]/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="box" class="w-6 h-6 text-[#ff9e02]"></i>
                     </div>
                     <h3 class="font-semibold mb-2">3D Asset Creation</h3>
                     <p class="text-sm text-slate-600">Photorealistic 3D models for luxury brand positioning</p>
                 </div>
                 <div class="text-center p-6 bg-slate-50 rounded-xl border border-slate-200/50">
-                    <div class="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                        <i data-lucide="monitor" class="w-6 h-6 text-emerald-600"></i>
+                    <div class="w-12 h-12 bg-[#fe2267]/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="monitor" class="w-6 h-6 text-[#fe2267]"></i>
                     </div>
                     <h3 class="font-semibold mb-2">Interactive Experiences</h3>
                     <p class="text-sm text-slate-600">Touch-first 3D applications for trade shows and kiosks</p>
                 </div>
                 <div class="text-center p-6 bg-slate-50 rounded-xl border border-slate-200/50">
-                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                        <i data-lucide="layers" class="w-6 h-6 text-purple-600"></i>
+                    <div class="w-12 h-12 bg-[#4934bc]/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="layers" class="w-6 h-6 text-[#4934bc]"></i>
                     </div>
                     <h3 class="font-semibold mb-2">Omnichannel Content</h3>
                     <p class="text-sm text-slate-600">Scalable visual ecosystems across all marketing channels</p>
@@ -347,43 +338,43 @@
                         <h3 class="text-xl font-bold">Fashion & Retail</h3>
                     </div>
                     <p class="text-slate-600 mb-4">Replace photo agencies with AI-powered model photography. Achieve 98% texture accuracy at 1/3rd traditional cost.</p>
-                    <ul class="text-sm text-slate-600 space-y-2">
-                        <li>• Enterprise AI photography platforms</li>
-                        <li>• E-commerce and social media content</li>
-                        <li>• Unlimited creative variations</li>
-                        <li>• Brand-consistent styling</li>
+                    <ul class="text-sm text-slate-600 space-y-3">
+                        <li class="flex items-start space-x-2"><i data-lucide="check" class="w-4 h-4 text-[#4934bc] mt-1 flex-shrink-0"></i><span>Enterprise AI photography platforms</span></li>
+                        <li class="flex items-start space-x-2"><i data-lucide="check" class="w-4 h-4 text-[#4934bc] mt-1 flex-shrink-0"></i><span>E-commerce and social media content</span></li>
+                        <li class="flex items-start space-x-2"><i data-lucide="check" class="w-4 h-4 text-[#4934bc] mt-1 flex-shrink-0"></i><span>Unlimited creative variations</span></li>
+                        <li class="flex items-start space-x-2"><i data-lucide="check" class="w-4 h-4 text-[#4934bc] mt-1 flex-shrink-0"></i><span>Brand-consistent styling</span></li>
                     </ul>
                 </div>
 
                 <div class="bg-white p-8 rounded-2xl shadow-lg border border-slate-200/50">
                     <div class="flex items-center mb-6">
-                        <div class="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center mr-4">
-                            <i data-lucide="palette" class="w-6 h-6 text-amber-600"></i>
+                        <div class="w-12 h-12 bg-[#ff9e02]/10 rounded-lg flex items-center justify-center mr-4">
+                            <i data-lucide="palette" class="w-6 h-6 text-[#ff9e02]"></i>
                         </div>
                         <h3 class="text-xl font-bold">Luxury Services</h3>
                     </div>
                     <p class="text-slate-600 mb-4">Transform industrial imagery into luxury-standard visuals that impress high-net-worth clients and premium markets.</p>
-                    <ul class="text-sm text-slate-600 space-y-2">
-                        <li>• Photorealistic 3D asset libraries</li>
-                        <li>• Premium brand positioning</li>
-                        <li>• HNI client-ready materials</li>
-                        <li>• Omnichannel deployment</li>
+                    <ul class="text-sm text-slate-600 space-y-3">
+                        <li class="flex items-start space-x-2"><i data-lucide="check" class="w-4 h-4 text-[#ff9e02] mt-1 flex-shrink-0"></i><span>Photorealistic 3D asset libraries</span></li>
+                        <li class="flex items-start space-x-2"><i data-lucide="check" class="w-4 h-4 text-[#ff9e02] mt-1 flex-shrink-0"></i><span>Premium brand positioning</span></li>
+                        <li class="flex items-start space-x-2"><i data-lucide="check" class="w-4 h-4 text-[#ff9e02] mt-1 flex-shrink-0"></i><span>HNI client-ready materials</span></li>
+                        <li class="flex items-start space-x-2"><i data-lucide="check" class="w-4 h-4 text-[#ff9e02] mt-1 flex-shrink-0"></i><span>Omnichannel deployment</span></li>
                     </ul>
                 </div>
 
                 <div class="bg-white p-8 rounded-2xl shadow-lg border border-slate-200/50">
                     <div class="flex items-center mb-6">
-                        <div class="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mr-4">
-                            <i data-lucide="cpu" class="w-6 h-6 text-emerald-600"></i>
+                        <div class="w-12 h-12 bg-[#fe2267]/10 rounded-lg flex items-center justify-center mr-4">
+                            <i data-lucide="cpu" class="w-6 h-6 text-[#fe2267]"></i>
                         </div>
                         <h3 class="text-xl font-bold">B2B Manufacturing</h3>
                     </div>
                     <p class="text-slate-600 mb-4">Create interactive product experiences that turn trade show foot traffic into qualified leads with 3x longer engagement.</p>
-                    <ul class="text-sm text-slate-600 space-y-2">
-                        <li>• Interactive 3D WebApps</li>
-                        <li>• Trade show kiosk solutions</li>
-                        <li>• 360° product exploration</li>
-                        <li>• Digital engagement layers</li>
+                    <ul class="text-sm text-slate-600 space-y-3">
+                        <li class="flex items-start space-x-2"><i data-lucide="check" class="w-4 h-4 text-[#fe2267] mt-1 flex-shrink-0"></i><span>Interactive 3D WebApps</span></li>
+                        <li class="flex items-start space-x-2"><i data-lucide="check" class="w-4 h-4 text-[#fe2267] mt-1 flex-shrink-0"></i><span>Trade show kiosk solutions</span></li>
+                        <li class="flex items-start space-x-2"><i data-lucide="check" class="w-4 h-4 text-[#fe2267] mt-1 flex-shrink-0"></i><span>360° product exploration</span></li>
+                        <li class="flex items-start space-x-2"><i data-lucide="check" class="w-4 h-4 text-[#fe2267] mt-1 flex-shrink-0"></i><span>Digital engagement layers</span></li>
                     </ul>
                 </div>
             </div>
@@ -401,9 +392,9 @@
                 <a href="#contact" class="bg-[#fe2267] text-white font-bold px-8 py-4 rounded-lg hover:bg-[#e01b58] transition-all duration-300 transform hover:scale-105">
                     Schedule Consultation
                 </a>
-                <button class="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white/10 transition-colors">
+                <a href="#solutions" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white/10 transition-colors">
                     View All Solutions
-                </button>
+                </a>
             </div>
         </div>
     </section>
@@ -464,7 +455,7 @@
                             </form>
                         </div>
                         <div id="form-message" class="hidden text-center">
-                            <i data-lucide="check-circle" class="w-16 h-16 text-green-400 mx-auto mb-4"></i>
+                            <i data-lucide="check-circle" class="w-16 h-16 text-[#ff9e02] mx-auto mb-4"></i>
                             <h3 class="text-2xl font-bold mb-2">Thank You!</h3>
                             <p class="text-white/80">Your message has been sent. We'll be in touch soon.</p>
                         </div>
@@ -568,4 +559,3 @@
 
 </body>
 </html>
-                                
