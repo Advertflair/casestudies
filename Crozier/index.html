@@ -1,102 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Crozier Fine Arts Case Study | Advertflair</title>
-          <link rel="icon" href="/DHEN/Assets/images/favicon_adv.ico" type="image/x-icon">
-      <link rel="icon" href="/DHEN/Assets/images/favicon_adv.png" type="image/png">
-<link rel="icon" href="/DHEN/Assets/images/favicon_adv.svg" type="image/svg+xml">
+
+    <!-- Favicons -->
+    <link rel="icon" href="/DHEN/Assets/images/favicon_adv.ico" type="image/x-icon" />
+    <link rel="icon" href="/DHEN/Assets/images/favicon_adv.png" type="image/png" />
+    <link rel="icon" href="/DHEN/Assets/images/favicon_adv.svg" type="image/svg+xml" />
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Google Fonts: Inter -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    
+
+    <!-- Google Fonts: Inter (Display swap for performance) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
-    
-    <!-- Custom Styles -->
+
+    <!-- Design Tokens & Utilities -->
     <style>
+        :root {
+            /* Brand */
+            --brand-purple-1: #4934bc;
+            --brand-purple-2: #3a2a9a;
+            --brand-pink: #fe2267;
+            --brand-pink-hover: #e01b58;
+            --brand-orange: #ff9e02;
+            --brand-orange-hover: #e68e00;
+
+            /* Neutrals */
+            --bg-weak: #f8fafc;   /* slate-50 */
+            --text-strong: #1e293b; /* slate-800 */
+            --text-weak: #475569; /* slate-600 */
+            --border-weak: rgba(226, 232, 240, 0.6); /* slate-200/60 */
+        }
+
+        html { scroll-behavior: smooth; }
         body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f8fafc; /* slate-50 */
-            color: #1e293b; /* slate-800 */
+            font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', sans-serif;
+            background-color: var(--bg-weak);
+            color: var(--text-strong);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
-        /* Custom gradient for hero section */
+
+        /* Brand Gradients */
         .gradient-bg {
-            background: linear-gradient(135deg, #4934bc 0%, #3a2a9a 100%);
+            background: linear-gradient(135deg, var(--brand-purple-1) 0%, var(--brand-purple-2) 100%);
         }
-        /* Custom gradient for text */
         .text-gradient {
-            background: linear-gradient(90deg, #fe2267, #ff9e02);
+            background: linear-gradient(90deg, var(--brand-pink), var(--brand-orange));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
             text-fill-color: transparent;
         }
-        /* Custom card styling */
+
+        /* Cards & Motion */
         .stat-card {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            transition: transform .3s ease, box-shadow .3s ease;
+            will-change: transform;
         }
         .stat-card:hover {
             transform: translateY(-8px);
             box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
         }
-        /* Scroll behavior */
-        html {
-            scroll-behavior: smooth;
-        }
-        /* Before/After container styling */
-        .before-after-container {
-            position: relative;
-            margin-bottom: 4rem;
-        }
+
+        /* Before/After containers */
+        .before-after-container { position: relative; margin-bottom: 4rem; }
         .before-after-arrow {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 10;
+            position: absolute; inset: 0;
+            display: grid; place-items: center;
+            pointer-events: none;
+        }
+
+        /* Focus-visible for a11y */
+        .focus-ring:focus-visible {
+            outline: 2px solid var(--brand-orange);
+            outline-offset: 2px;
+            border-radius: .5rem;
         }
     </style>
 </head>
-<body class="antialiased">
+<body class="antialiased selection:bg-[#fde68a] selection:text-[#1f2937]">
 
     <!-- Header -->
-    <header class="bg-white fixed top-0 left-0 right-0 z-50 shadow-sm">
+    <header class="bg-white/95 backdrop-blur supports-[backdrop-filter]:backdrop-blur fixed top-0 left-0 right-0 z-50 shadow-sm">
         <div class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
                 <div class="flex items-center space-x-2">
-<a href="https://casestudies.advertflair.com/">
-    <img src="https://cdn.prod.website-files.com/6336da2704c4776a047e9529/6336da2704c47740ce7e9542_image%201.webp" alt="Advertflair Logo" class="h-10 w-auto">
-</a>                </div>
+                    <a href="https://casestudies.advertflair.com/" class="inline-flex items-center focus-ring" aria-label="Advertflair Home">
+                        <img src="https://cdn.prod.website-files.com/6336da2704c4776a047e9529/6336da2704c47740ce7e9542_image%201.webp" alt="Advertflair Logo" class="h-10 w-auto" />
+                    </a>
+                </div>
                 <nav class="hidden md:flex items-center space-x-8">
-                    <a href="#problem" class="text-slate-600 hover:text-[#4934bc] transition-colors">The Problem</a>
-                    <a href="#solution" class="text-slate-600 hover:text-[#4934bc] transition-colors">Our Solution</a>
-                    <a href="#impact" class="text-slate-600 hover:text-[#4934bc] transition-colors">Impact</a>
+                    <a href="#problem" class="focus-ring text-slate-600 hover:text-[color:var(--brand-purple-1)] transition-colors">The Problem</a>
+                    <a href="#solution" class="focus-ring text-slate-600 hover:text-[color:var(--brand-purple-1)] transition-colors">Our Solution</a>
+                    <a href="#impact" class="focus-ring text-slate-600 hover:text-[color:var(--brand-purple-1)] transition-colors">Impact</a>
                 </nav>
-                <a href="#contact" class="hidden md:inline-block bg-[#4934bc] text-white font-semibold px-5 py-2 rounded-lg hover:bg-[#3a2a9a] transition-all duration-300 transform hover:scale-105">
+                <a href="#contact" class="hidden md:inline-block focus-ring bg-[color:var(--brand-purple-1)] text-white font-semibold px-5 py-2 rounded-lg hover:bg-[color:var(--brand-purple-2)] transition-all duration-300 transform hover:scale-105">
                     Let's Talk
                 </a>
-                <button id="mobile-menu-button" class="md:hidden text-slate-800">
+                <button id="mobile-menu-button" class="md:hidden text-slate-800 focus-ring" aria-label="Open Menu">
                     <i data-lucide="menu"></i>
                 </button>
             </div>
         </div>
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white px-6 pb-4">
-             <a href="#problem" class="block py-2 text-slate-600 hover:text-[#4934bc]">The Problem</a>
-             <a href="#solution" class="block py-2 text-slate-600 hover:text-[#4934bc]">Our Solution</a>
-             <a href="#impact" class="block py-2 text-slate-600 hover:text-[#4934bc]">Impact</a>
-             <a href="#contact" class="block mt-4 w-full text-center bg-[#4934bc] text-white font-semibold px-5 py-2 rounded-lg hover:bg-[#3a2a9a]">Let's Talk</a>
+        <div id="mobile-menu" class="hidden md:hidden bg-white px-6 pb-4 border-t border-slate-100">
+            <a href="#problem" class="block py-2 text-slate-600 hover:text-[color:var(--brand-purple-1)] focus-ring">The Problem</a>
+            <a href="#solution" class="block py-2 text-slate-600 hover:text-[color:var(--brand-purple-1)] focus-ring">Our Solution</a>
+            <a href="#impact" class="block py-2 text-slate-600 hover:text-[color:var(--brand-purple-1)] focus-ring">Impact</a>
+            <a href="#contact" class="block mt-4 w-full text-center bg-[color:var(--brand-purple-1)] text-white font-semibold px-5 py-2 rounded-lg hover:bg-[color:var(--brand-purple-2)] focus-ring">Let's Talk</a>
         </div>
     </header>
 
     <main>
-        <!-- Hero Section -->
+        <!-- Hero -->
         <section class="gradient-bg text-white pt-32 pb-20">
             <div class="container mx-auto px-6 text-center">
                 <span class="text-sm font-bold uppercase tracking-widest text-white/70">Case Study: Crozier Fine Arts</span>
@@ -106,11 +130,11 @@
                 <p class="max-w-3xl mx-auto text-lg md:text-xl text-white/80 mb-12">
                     How Crozier Fine Arts elevated their visual identity to match their world-class reputation and reflect their industry-leading service standards.
                 </p>
-                <div class="flex justify-center space-x-4">
-                    <a href="#impact" class="bg-[#fe2267] text-white font-bold px-8 py-4 rounded-lg hover:bg-[#e01b58] transition-all duration-300 transform hover:scale-105">
+                <div class="flex justify-center gap-4">
+                    <a href="#impact" class="focus-ring inline-flex items-center justify-center bg-[color:var(--brand-pink)] text-white font-bold px-8 py-4 rounded-lg hover:bg-[color:var(--brand-pink-hover)] transition-all duration-300 transform hover:scale-105">
                         See The Results
                     </a>
-                    <a href="#solution" class="bg-white/20 text-white font-bold px-8 py-4 rounded-lg hover:bg-white/30 transition-all duration-300">
+                    <a href="#solution" class="focus-ring inline-flex items-center justify-center bg-white/20 text-white font-bold px-8 py-4 rounded-lg hover:bg-white/30 transition-all duration-300">
                         Explore The Solution
                     </a>
                 </div>
@@ -122,22 +146,22 @@
             <div class="container mx-auto px-6">
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
                     <div class="flex flex-col items-center">
-                        <i data-lucide="gem" class="w-8 h-8 mb-2 text-[#4934bc]"></i>
+                        <i data-lucide="gem" class="w-8 h-8 mb-2 text-[color:var(--brand-purple-1)]"></i>
                         <h3 class="font-bold text-slate-500 text-sm uppercase">Audience</h3>
                         <p class="text-lg font-semibold text-slate-800">HNI Art Collectors</p>
                     </div>
                     <div class="flex flex-col items-center">
-                        <i data-lucide="palette" class="w-8 h-8 mb-2 text-[#4934bc]"></i>
+                        <i data-lucide="palette" class="w-8 h-8 mb-2 text-[color:var(--brand-purple-1)]"></i>
                         <h3 class="font-bold text-slate-500 text-sm uppercase">Industry</h3>
                         <p class="text-lg font-semibold text-slate-800">Art Storage & Transport</p>
                     </div>
                     <div class="flex flex-col items-center">
-                         <i data-lucide="crown" class="w-8 h-8 mb-2 text-[#4934bc]"></i>
+                        <i data-lucide="crown" class="w-8 h-8 mb-2 text-[color:var(--brand-purple-1)]"></i>
                         <h3 class="font-bold text-slate-500 text-sm uppercase">Objective</h3>
                         <p class="text-lg font-semibold text-slate-800">Premium Brand Positioning</p>
                     </div>
                     <div class="flex flex-col items-center">
-                        <i data-lucide="globe" class="w-8 h-8 mb-2 text-[#4934bc]"></i>
+                        <i data-lucide="globe" class="w-8 h-8 mb-2 text-[color:var(--brand-purple-1)]"></i>
                         <h3 class="font-bold text-slate-500 text-sm uppercase">Platform</h3>
                         <p class="text-lg font-semibold text-slate-800">Omnichannel Marketing</p>
                     </div>
@@ -145,7 +169,7 @@
             </div>
         </section>
 
-        <!-- The Problem Section -->
+        <!-- Problem -->
         <section id="problem" class="py-20">
             <div class="container mx-auto px-6">
                 <div class="text-center max-w-3xl mx-auto">
@@ -155,34 +179,30 @@
                     </p>
                 </div>
                 <div class="mt-16 grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <!-- Problem Card 1 -->
-                    <div class="bg-white p-6 rounded-xl shadow-lg border border-slate-200/50">
-                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-[#4934bc]/10 mb-4">
-                            <i data-lucide="image-off" class="text-[#4934bc]"></i>
+                    <div class="bg-white p-6 rounded-xl shadow-lg border border-[color:var(--border-weak)]">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-[color:var(--brand-purple-1)]/10 mb-4">
+                            <i data-lucide="image-off" class="text-[color:var(--brand-purple-1)]"></i>
                         </div>
                         <h3 class="font-bold text-lg mb-2">Boring, Unprofessional Imagery</h3>
                         <p class="text-slate-600">Real photos of trucks, warehouses, and crate boxes looked dated and industrial—completely unsuitable for luxury clientele.</p>
                     </div>
-                    <!-- Problem Card 2 -->
-                    <div class="bg-white p-6 rounded-xl shadow-lg border border-slate-200/50">
-                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-[#4934bc]/10 mb-4">
-                            <i data-lucide="user-x" class="text-[#4934bc]"></i>
+                    <div class="bg-white p-6 rounded-xl shadow-lg border border-[color:var(--border-weak)]">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-[color:var(--brand-purple-1)]/10 mb-4">
+                            <i data-lucide="user-x" class="text-[color:var(--brand-purple-1)]"></i>
                         </div>
                         <h3 class="font-bold text-lg mb-2">Business Development Roadblock</h3>
                         <p class="text-slate-600">Business Development team couldn't show existing imagery to High Net Worth clients without damaging brand perception.</p>
                     </div>
-                    <!-- Problem Card 3 -->
-                    <div class="bg-white p-6 rounded-xl shadow-lg border border-slate-200/50">
-                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-[#4934bc]/10 mb-4">
-                            <i data-lucide="camera-off" class="text-[#4934bc]"></i>
+                    <div class="bg-white p-6 rounded-xl shadow-lg border border-[color:var(--border-weak)]">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-[color:var(--brand-purple-1)]/10 mb-4">
+                            <i data-lucide="camera-off" class="text-[color:var(--brand-purple-1)]"></i>
                         </div>
                         <h3 class="font-bold text-lg mb-2">Limited Content Scalability</h3>
                         <p class="text-slate-600">Static photos meant limited marketing materials. Every new campaign required expensive photo shoots or settling for subpar visuals.</p>
                     </div>
-                    <!-- Problem Card 4 -->
-                    <div class="bg-white p-6 rounded-xl shadow-lg border border-slate-200/50">
-                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-[#4934bc]/10 mb-4">
-                            <i data-lucide="trending-down" class="text-[#4934bc]"></i>
+                    <div class="bg-white p-6 rounded-xl shadow-lg border border-[color:var(--border-weak)]">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-[color:var(--brand-purple-1)]/10 mb-4">
+                            <i data-lucide="trending-down" class="text-[color:var(--brand-purple-1)]"></i>
                         </div>
                         <h3 class="font-bold text-lg mb-2">Social Media Underperformance</h3>
                         <p class="text-slate-600">Traditional imagery generated minimal engagement on platforms where art collectors and galleries discover partners.</p>
@@ -191,7 +211,7 @@
             </div>
         </section>
 
-        <!-- The Solution Section -->
+        <!-- Solution -->
         <section id="solution" class="py-20 bg-white">
             <div class="container mx-auto px-6">
                 <div class="text-center max-w-3xl mx-auto">
@@ -200,72 +220,72 @@
                         We transformed Crozier's entire visual ecosystem by creating a comprehensive 3D asset library that elevated their brand to match their world-class service standards.
                     </p>
                 </div>
-                
-                <!-- Before/After Visuals - Truck -->
+
+                <!-- Before/After - Truck -->
                 <div class="before-after-container max-w-5xl mx-auto mb-16">
                     <div class="text-center mb-4">
                         <h3 class="text-2xl font-bold text-slate-800">Transportation Fleet Transformation</h3>
                         <p class="text-slate-600">From industrial documentation to cinematic storytelling</p>
                     </div>
                     <div class="before-after-arrow">
-                        <div class="w-16 h-16 bg-[#ff9e02] rounded-full flex items-center justify-center shadow-2xl">
+                        <div class="w-16 h-16 bg-[color:var(--brand-orange)] rounded-full flex items-center justify-center shadow-2xl">
                             <i data-lucide="arrow-big-right" class="w-8 h-8 text-white"></i>
                         </div>
                     </div>
                     <div class="grid md:grid-cols-2 gap-4 items-center">
                         <div class="text-center">
                             <span class="text-slate-500 font-bold">BEFORE: Boring Real Photo</span>
-                            <img src="/Crozier/Assets/images/truck_before.webp" alt="Original Truck Photo" class="rounded-xl shadow-lg mt-2 mx-auto w-full">
+                            <img src="/Crozier/Assets/images/truck_before.webp" alt="Original Truck Photo" class="rounded-xl shadow-lg mt-2 mx-auto w-full" />
                         </div>
                         <div class="text-center">
                             <span class="text-slate-500 font-bold">AFTER: Cinematic 3D Render</span>
-                            <img src="/Crozier/Assets/images/truck_after.webp" alt="3D Rendered Truck" class="rounded-xl shadow-2xl mt-2 mx-auto border-4 border-white w-full">
+                            <img src="/Crozier/Assets/images/truck_after.webp" alt="3D Rendered Truck" class="rounded-xl shadow-2xl mt-2 mx-auto border-4 border-white w-full" />
                         </div>
                     </div>
                 </div>
 
-                <!-- Before/After Visuals - Warehouse -->
+                <!-- Before/After - Warehouse -->
                 <div class="before-after-container max-w-5xl mx-auto mb-16">
                     <div class="text-center mb-4">
                         <h3 class="text-2xl font-bold text-slate-800">Warehouse Facility Visualization</h3>
                         <p class="text-slate-600">From industrial spaces to museum-quality environments</p>
                     </div>
                     <div class="before-after-arrow">
-                        <div class="w-16 h-16 bg-[#ff9e02] rounded-full flex items-center justify-center shadow-2xl">
+                        <div class="w-16 h-16 bg-[color:var(--brand-orange)] rounded-full flex items-center justify-center shadow-2xl">
                             <i data-lucide="arrow-big-right" class="w-8 h-8 text-white"></i>
                         </div>
                     </div>
                     <div class="grid md:grid-cols-2 gap-4 items-center">
                         <div class="text-center">
                             <span class="text-slate-500 font-bold">BEFORE: Basic Warehouse Photo</span>
-                            <img src="/Crozier/Assets/images/wearhouse_before.webp" alt="Original Warehouse Photo" class="rounded-xl shadow-lg mt-2 mx-auto w-full">
+                            <img src="/Crozier/Assets/images/wearhouse_before.webp" alt="Original Warehouse Photo" class="rounded-xl shadow-lg mt-2 mx-auto w-full" />
                         </div>
                         <div class="text-center">
                             <span class="text-slate-500 font-bold">AFTER: Premium 3D Environment</span>
-                            <img src="/Crozier/Assets/images/storage-hero.webp" alt="3D Rendered Warehouse" class="rounded-xl shadow-2xl mt-2 mx-auto border-4 border-white w-full">
+                            <img src="/Crozier/Assets/images/storage-hero.webp" alt="3D Rendered Warehouse" class="rounded-xl shadow-2xl mt-2 mx-auto border-4 border-white w-full" />
                         </div>
                     </div>
                 </div>
 
-                <!-- Before/After Visuals - Crates -->
+                <!-- Before/After - Crates -->
                 <div class="before-after-container max-w-5xl mx-auto mb-16">
                     <div class="text-center mb-4">
                         <h3 class="text-2xl font-bold text-slate-800">Custom Crate Systems</h3>
                         <p class="text-slate-600">From utilitarian boxes to premium protection showcases</p>
                     </div>
                     <div class="before-after-arrow">
-                        <div class="w-16 h-16 bg-[#ff9e02] rounded-full flex items-center justify-center shadow-2xl">
+                        <div class="w-16 h-16 bg-[color:var(--brand-orange)] rounded-full flex items-center justify-center shadow-2xl">
                             <i data-lucide="arrow-big-right" class="w-8 h-8 text-white"></i>
                         </div>
                     </div>
                     <div class="grid md:grid-cols-2 gap-4 items-center">
                         <div class="text-center">
                             <span class="text-slate-500 font-bold">BEFORE: Basic Crate Documentation</span>
-                            <img src="/Crozier/Assets/images/Crate_Before.webp" alt="Original Crate Photo" class="rounded-xl shadow-lg mt-2 mx-auto w-full">
+                            <img src="/Crozier/Assets/images/Crate_Before.webp" alt="Original Crate Photo" class="rounded-xl shadow-lg mt-2 mx-auto w-full" />
                         </div>
                         <div class="text-center">
                             <span class="text-slate-500 font-bold">AFTER: Premium 3D Visualization</span>
-                            <img src="/Crozier/Assets/images/Crate_after.webp" alt="3D Rendered Crate" class="rounded-xl shadow-2xl mt-2 mx-auto border-4 border-white w-full">
+                            <img src="/Crozier/Assets/images/Crate_after.webp" alt="3D Rendered Crate" class="rounded-xl shadow-2xl mt-2 mx-auto border-4 border-white w-full" />
                         </div>
                     </div>
                 </div>
@@ -273,22 +293,22 @@
                 <!-- Key Features -->
                 <div class="mt-20 grid md:grid-cols-3 gap-8 text-center">
                     <div class="flex flex-col items-center">
-                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-[#fe2267]/10 mb-4">
-                            <i data-lucide="cube" class="w-8 h-8 text-[#fe2267]"></i>
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-[color:var(--brand-pink)]/10 mb-4">
+                            <i data-lucide="cube" class="w-8 h-8 text-[color:var(--brand-pink)]"></i>
                         </div>
                         <h3 class="font-bold text-xl mb-2">1:1 Scale 3D Recreation</h3>
                         <p class="text-slate-600">Meticulously recreated every Crozier asset—trucks, custom crate boxes, warehouses—as photorealistic 3D models.</p>
                     </div>
                     <div class="flex flex-col items-center">
-                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-[#fe2267]/10 mb-4">
-                            <i data-lucide="mountain" class="w-8 h-8 text-[#fe2267]"></i>
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-[color:var(--brand-pink)]/10 mb-4">
+                            <i data-lucide="mountain" class="w-8 h-8 text-[color:var(--brand-pink)]"></i>
                         </div>
                         <h3 class="font-bold text-xl mb-2">Premium Lifestyle Positioning</h3>
                         <p class="text-slate-600">Transformed boring warehouse shots into aspirational scenes: trucks in scenic locations, museum-quality facilities.</p>
                     </div>
                     <div class="flex flex-col items-center">
-                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-[#fe2267]/10 mb-4">
-                            <i data-lucide="infinity" class="w-8 h-8 text-[#fe2267]"></i>
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-[color:var(--brand-pink)]/10 mb-4">
+                            <i data-lucide="infinity" class="w-8 h-8 text-[color:var(--brand-pink)]"></i>
                         </div>
                         <h3 class="font-bold text-xl mb-2">Infinite Content Variations</h3>
                         <p class="text-slate-600">Built a scalable repository allowing unlimited marketing materials without additional photo shoots—from sustainability campaigns to futuristic gallery visualizations.</p>
@@ -297,7 +317,7 @@
             </div>
         </section>
 
-        <!-- The Impact Section -->
+        <!-- Impact -->
         <section id="impact" class="py-20">
             <div class="container mx-auto px-6">
                 <div class="text-center max-w-3xl mx-auto">
@@ -307,37 +327,33 @@
                     </p>
                 </div>
                 <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <!-- Stat Card 1 -->
-                    <div class="stat-card bg-white p-8 rounded-2xl shadow-xl border border-slate-200/50">
-                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-[#ff9e02]/10 mb-6">
-                           <i data-lucide="heart" class="w-8 h-8 text-[#ff9e02]"></i>
+                    <div class="stat-card bg-white p-8 rounded-2xl shadow-xl border border-[color:var(--border-weak)]">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-[color:var(--brand-orange)]/10 mb-6">
+                           <i data-lucide="heart" class="w-8 h-8 text-[color:var(--brand-orange)]"></i>
                         </div>
                         <p class="text-4xl font-extrabold text-slate-800">Peak</p>
                         <h3 class="font-semibold text-xl mt-2">Social Media Performance</h3>
                         <p class="text-slate-600 mt-2">Rendered content achieved maximum likes and comments—the highest engagement rates in company history.</p>
                     </div>
-                    <!-- Stat Card 2 -->
-                    <div class="stat-card bg-white p-8 rounded-2xl shadow-xl border border-slate-200/50">
-                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-[#ff9e02]/10 mb-6">
-                            <i data-lucide="crown" class="w-8 h-8 text-[#ff9e02]"></i>
+                    <div class="stat-card bg-white p-8 rounded-2xl shadow-xl border border-[color:var(--border-weak)]">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-[color:var(--brand-orange)]/10 mb-6">
+                            <i data-lucide="crown" class="w-8 h-8 text-[color:var(--brand-orange)]"></i>
                         </div>
                         <p class="text-4xl font-extrabold text-slate-800">HNI</p>
                         <h3 class="font-semibold text-xl mt-2">Premium Client-Ready Materials</h3>
                         <p class="text-slate-600 mt-2">Business development team gained confidence presenting to prestigious galleries and collectors with luxury-standard visuals.</p>
                     </div>
-                    <!-- Stat Card 3 -->
-                    <div class="stat-card bg-white p-8 rounded-2xl shadow-xl border border-slate-200/50">
-                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-[#ff9e02]/10 mb-6">
-                            <i data-lucide="share-2" class="w-8 h-8 text-[#ff9e02]"></i>
+                    <div class="stat-card bg-white p-8 rounded-2xl shadow-xl border border-[color:var(--border-weak)]">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-[color:var(--brand-orange)]/10 mb-6">
+                            <i data-lucide="share-2" class="w-8 h-8 text-[color:var(--brand-orange)]"></i>
                         </div>
                         <p class="text-4xl font-extrabold text-slate-800">Omni</p>
                         <h3 class="font-semibold text-xl mt-2">Channel Asset Deployment</h3>
                         <p class="text-slate-600 mt-2">Single 3D library now powers website imagery, social content, newsletters, blogs, PR materials, and internal communications.</p>
                     </div>
-                    <!-- Stat Card 4 -->
-                    <div class="stat-card bg-white p-8 rounded-2xl shadow-xl border border-slate-200/50">
-                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-[#ff9e02]/10 mb-6">
-                            <i data-lucide="trending-up" class="w-8 h-8 text-[#ff9e02]"></i>
+                    <div class="stat-card bg-white p-8 rounded-2xl shadow-xl border border-[color:var(--border-weak)]">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-[color:var(--brand-orange)]/10 mb-6">
+                            <i data-lucide="trending-up" class="w-8 h-8 text-[color:var(--brand-orange)]"></i>
                         </div>
                         <p class="text-4xl font-extrabold text-slate-800">Scalable</p>
                         <h3 class="font-semibold text-xl mt-2">Marketing Infrastructure</h3>
@@ -347,7 +363,7 @@
             </div>
         </section>
 
-        <!-- Additional Impact Section - Before/After Social Media Grid -->
+        <!-- Social Media Grid -->
         <section class="py-20 bg-white">
             <div class="container mx-auto px-6">
                 <div class="text-center max-w-3xl mx-auto mb-16">
@@ -356,23 +372,21 @@
                         Our rendered content consistently achieved the highest engagement rates across all Crozier's social media platforms.
                     </p>
                 </div>
-                
-                <!-- Social Media Grid Placeholder -->
                 <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
                     <div class="text-center">
-                        <img src="/Crozier/Assets/images/Instagram_post_1.webp" alt="High Engagement Social Post 1" class="rounded-xl shadow-lg mx-auto mb-4">
+                        <img src="/Crozier/Assets/images/Instagram_post_1.webp" alt="High Engagement Social Post 1" class="rounded-xl shadow-lg mx-auto mb-4" />
                         <div class="flex items-center justify-center space-x-4 text-slate-600">
                             <span class="flex items-center"><i data-lucide="heart" class="w-4 h-4 mr-1"></i> 117</span>
                         </div>
                     </div>
                     <div class="text-center">
-                        <img src="/Crozier/Assets/images/Instagram_post_2.webp" alt="High Engagement Social Post 2" class="rounded-xl shadow-lg mx-auto mb-4">
+                        <img src="/Crozier/Assets/images/Instagram_post_2.webp" alt="High Engagement Social Post 2" class="rounded-xl shadow-lg mx-auto mb-4" />
                         <div class="flex items-center justify-center space-x-4 text-slate-600">
                             <span class="flex items-center"><i data-lucide="heart" class="w-4 h-4 mr-1"></i> 115</span>
                         </div>
                     </div>
                     <div class="text-center">
-                        <img src="/Crozier/Assets/images/Instagram_post_3.webp" alt="High Engagement Social Post 3" class="rounded-xl shadow-lg mx-auto mb-4">
+                        <img src="/Crozier/Assets/images/Instagram_post_3.webp" alt="High Engagement Social Post 3" class="rounded-xl shadow-lg mx-auto mb-4" />
                         <div class="flex items-center justify-center space-x-4 text-slate-600">
                             <span class="flex items-center"><i data-lucide="heart" class="w-4 h-4 mr-1"></i> 164</span>
                         </div>
@@ -380,7 +394,8 @@
                 </div>
             </div>
         </section>
-        <!-- CTA Section -->
+
+        <!-- CTA -->
         <section id="contact" class="bg-white">
             <div class="container mx-auto px-6 py-20">
                 <div class="relative gradient-bg rounded-2xl p-10 md:p-16 text-white overflow-hidden">
@@ -388,39 +403,39 @@
                     <div class="absolute -bottom-16 -left-10 w-40 h-40 bg-white/10 rounded-full"></div>
                     <div class="relative z-10 grid md:grid-cols-2 gap-12 items-center">
                         <div class="text-center md:text-left">
-                             <h2 class="text-3xl md:text-5xl font-bold mb-4">Want This for Your Brand?</h2>
-                             <p class="max-w-2xl text-lg text-white/80">
+                            <h2 class="text-3xl md:text-5xl font-bold mb-4">Want This for Your Brand?</h2>
+                            <p class="max-w-2xl text-lg text-white/80">
                                 We helped Crozier transform from industrial service provider to luxury brand partner. Whether you're repositioning for premium markets, scaling visual content, or need to impress high-value clients, we've got you covered.
-                             </p>
+                            </p>
                         </div>
                         <div class="bg-white/10 backdrop-blur-sm p-8 rounded-xl">
                             <div id="form-container">
-                                <form id="contact-form" class="space-y-4">
+                                <form id="contact-form" class="space-y-4" novalidate>
                                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                         <div>
                                             <label for="name" class="block text-sm font-medium text-white/80 mb-1">Full Name</label>
-                                            <input type="text" id="name" name="name" required class="w-full bg-white/20 border-white/30 border rounded-lg py-2 px-3 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-[#ff9e02]">
+                                            <input type="text" id="name" name="name" required class="focus-ring w-full bg-white/20 border-white/30 border rounded-lg py-2 px-3 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-[color:var(--brand-orange)]" />
                                         </div>
                                         <div>
                                             <label for="email" class="block text-sm font-medium text-white/80 mb-1">Work Email</label>
-                                            <input type="email" id="email" name="email" required class="w-full bg-white/20 border-white/30 border rounded-lg py-2 px-3 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-[#ff9e02]">
+                                            <input type="email" id="email" name="email" required class="focus-ring w-full bg-white/20 border-white/30 border rounded-lg py-2 px-3 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-[color:var(--brand-orange)]" />
                                         </div>
                                     </div>
                                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                         <div>
                                             <label for="phone" class="block text-sm font-medium text-white/80 mb-1">Phone Number</label>
-                                            <input type="tel" id="phone" name="phone" required class="w-full bg-white/20 border-white/30 border rounded-lg py-2 px-3 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-[#ff9e02]">
+                                            <input type="tel" id="phone" name="phone" required class="focus-ring w-full bg-white/20 border-white/30 border rounded-lg py-2 px-3 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-[color:var(--brand-orange)]" />
                                         </div>
                                         <div>
                                             <label for="company" class="block text-sm font-medium text-white/80 mb-1">Company Name</label>
-                                            <input type="text" id="company" name="company" required class="w-full bg-white/20 border-white/30 border rounded-lg py-2 px-3 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-[#ff9e02]">
+                                            <input type="text" id="company" name="company" required class="focus-ring w-full bg-white/20 border-white/30 border rounded-lg py-2 px-3 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-[color:var(--brand-orange)]" />
                                         </div>
                                     </div>
                                     <div>
                                         <label for="requirement" class="block text-sm font-medium text-white/80 mb-1">Your Requirement</label>
-                                        <textarea id="requirement" name="requirement" rows="3" required class="w-full bg-white/20 border-white/30 border rounded-lg py-2 px-3 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-[#ff9e02]"></textarea>
+                                        <textarea id="requirement" name="requirement" rows="3" required class="focus-ring w-full bg-white/20 border-white/30 border rounded-lg py-2 px-3 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-[color:var(--brand-orange)]"></textarea>
                                     </div>
-                                    <button type="submit" class="w-full bg-[#ff9e02] text-white font-bold px-10 py-3 rounded-lg hover:bg-[#e68e00] transition-all duration-300 transform hover:scale-105 shadow-lg">
+                                    <button type="submit" class="focus-ring w-full bg-[color:var(--brand-orange)] text-white font-bold px-10 py-3 rounded-lg hover:bg-[color:var(--brand-orange-hover)] transition-all duration-300 transform hover:scale-105 shadow-lg">
                                         Get a Free Consultation
                                     </button>
                                 </form>
@@ -441,7 +456,7 @@
     <footer class="bg-slate-800 text-slate-400 py-12">
         <div class="container mx-auto px-6 text-center">
             <div class="flex items-center justify-center space-x-2 mb-4">
-                 <img src="https://cdn.prod.website-files.com/6336da2704c4776a047e9529/6336da2704c47740ce7e9542_image%201.webp" alt="Advertflair Logo" class="h-10 w-auto filter invert brightness-0">
+                <img src="https://cdn.prod.website-files.com/6336da2704c4776a047e9529/6336da2704c47740ce7e9542_image%201.webp" alt="Advertflair Logo" class="h-10 w-auto filter invert brightness-0" />
             </div>
             <p>Your Digital Transformation Partner</p>
             <p class="mt-4 text-sm">&copy; 2025 Advertflair. All Rights Reserved.</p>
@@ -452,40 +467,26 @@
         // Initialize Lucide icons
         lucide.createIcons();
 
-        // Simple script for mobile menu toggle
+        // Mobile menu
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
-
-        mobileMenuButton.addEventListener('click', () => {
+        mobileMenuButton?.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
-        
-        // Close mobile menu when a link is clicked
-        const mobileMenuLinks = mobileMenu.getElementsByTagName('a');
-        for (let link of mobileMenuLinks) {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
-            });
-        }
+        Array.from(mobileMenu.getElementsByTagName('a')).forEach(link => {
+            link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+        });
 
-        // Contact Form Handler
+        // Contact form (UI state only)
         const contactForm = document.getElementById('contact-form');
         const formContainer = document.getElementById('form-container');
         const formMessage = document.getElementById('form-message');
-
-        contactForm.addEventListener('submit', function(event) {
-            event.preventDefault();
-
-            // The browser's built-in `required` attribute handles validation.
-            // If the form is valid, this event will fire.
-            
-            // On success, hide form and show message
+        contactForm?.addEventListener('submit', (e) => {
+            e.preventDefault();
             formContainer.classList.add('hidden');
             formMessage.classList.remove('hidden');
-            // Re-render icons in the success message if needed
             lucide.createIcons();
         });
     </script>
-
 </body>
 </html>
