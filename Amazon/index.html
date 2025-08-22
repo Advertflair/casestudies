@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon 3D AR Case Study | Advertflair</title>
+    <link rel="icon" href="/Assets/images/favicon_adv.ico" type="image/x-icon">
+    <link rel="icon" href="/Assets/images/favicon_adv.png" type="image/png">
+    <link rel="icon" href="/Assets/images/favicon_adv.svg" type="image/svg+xml">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+            color: #1e293b;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #4934bc 0%, #3a2a9a 100%);
+        }
+        .text-gradient {
+            background: linear-gradient(90deg, #fe2267, #ff9e02);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+        .amazon-gradient {
+            background: linear-gradient(135deg, #ff9900 0%, #ff6600 100%);
+        }
+        .stat-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .stat-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        .amazon-card {
+            background: linear-gradient(135deg, rgba(255, 153, 0, 0.1) 0%, rgba(255, 102, 0, 0.1) 100%);
+            border: 1px solid rgba(255, 153, 0, 0.2);
+        }
+        .badge-gold {
+            background: linear-gradient(45deg, #ffd700, #ffed4e, #ffd700);
+            color: #1e293b;
+        }
+        .ar-demo-card {
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+            border: 2px solid #0ea5e9;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="bg-white fixed top-0 left-0 right-0 z-50 shadow-sm">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <a href="https://casestudies.advertflair.com/">
+                        <img src="https://cdn.prod.website-files.com/6336da2704c4776a047e9529/6336da2704c47740ce7e9542_image%201.webp" alt="Advertflair Logo" class="h-10 w-auto">
+                    </a>
+                </div>
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#challenge" class="text-slate-600 hover:text-[#4934bc] transition-colors">The Challenge</a>
+                    <a href="#solution" class="text-slate-600 hover:text-[#4934bc] transition-colors">Our Solution</a>
+                    <a href="#showcase" class="text-slate-600 hover:text-[#4934bc] transition-colors">3D Showcase</a>
+                    <a href="#workflow" class="text-slate-600 hover:text-[#4934bc] transition-colors">AWS Workflow</a>
+                    <a href="#impact" class="text-slate-600 hover:text-[#4934bc] transition-colors">Impact</a>
+                </nav>
+                <a href="#contact" class="hidden md:inline-block bg-[#4934bc] text-white font-semibold px-5 py-2 rounded-lg hover:bg-[#3a2a9a] transition-all duration-300 transform hover:scale-105">
+                    Let's Talk
+                </a>
+                <button id="mobile-menu-button" class="md:hidden text-slate-800">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white px-6 pb-4">
+             <a href="#challenge" class="block py-2 text-slate-600 hover:text-[#4934bc]">The Challenge</a>
+             <a href="#solution" class="block py-2 text-slate-600 hover:text-[#4934bc]">Our Solution</a>
+             <a href="#showcase" class="block py-2 text-slate-600 hover:text-[#4934bc]">3D Showcase</a>
+             <a href="#workflow" class="block py-2 text-slate-600 hover:text-[#4934bc]">AWS Workflow</a>
+             <a href="#impact" class="block py-2 text-slate-600 hover:text-[#4934bc]">Impact</a>
+             <a href="#contact" class="block mt-4 w-full text-center bg-[#4934bc] text-white font-semibold px-5 py-2 rounded-lg hover:bg-[#3a2a9a]">Let's Talk</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="gradient-bg text-white pt-32 pb-20">
+            <div class="container mx-auto px-6 text-center">
+                <div class="flex items-center justify-center space-x-4 mb-6">
+                    <span class="badge-gold px-4 py-2 rounded-full text-sm font-bold">
+                        <i data-lucide="award" class="inline w-4 h-4 mr-1"></i>
+                        1 of 10 Global Certified 3D Content Vendors
+                    </span>
+                </div>
+                <span class="text-sm font-bold uppercase tracking-widest text-white/70">Case Study: Amazon</span>
+                <h1 class="text-4xl md:text-6xl font-extrabold mt-4 mb-6 leading-tight">
+                    Powering Amazon's AR Shopping Experience
+                </h1>
+                <p class="max-w-3xl mx-auto text-lg md:text-xl text-white/80 mb-12">
+                    How we built a custom full-stack workflow system integrated with AWS to deliver high-quality 3D models and AR experiences directly to Amazon's storefront, transforming the way millions shop online.
+                </p>
+                <div class="flex justify-center space-x-4">
+                    <a href="#showcase" class="bg-[#fe2267] text-white font-bold px-8 py-4 rounded-lg hover:bg-[#e01b58] transition-all duration-300 transform hover:scale-105">
+                        View 3D Portfolio
+                    </a>
+                    <a href="#workflow" class="bg-white/20 text-white font-bold px-8 py-4 rounded-lg hover:bg-white/30 transition-all duration-300">
+                        AWS Integration
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Client Info Bar -->
+        <section class="bg-white py-8 shadow-md -mt-10 relative z-10 mx-4 md:mx-auto max-w-6xl rounded-xl">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                    <div class="flex flex-col items-center">
+                        <i data-lucide="globe" class="w-8 h-8 mb-2 text-orange-500"></i>
+                        <h3 class="font-bold text-slate-500 text-sm uppercase">Industry</h3>
+                        <p class="text-lg font-semibold text-slate-800">E-commerce</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <i data-lucide="box" class="w-8 h-8 mb-2 text-orange-500"></i>
+                        <h3 class="font-bold text-slate-500 text-sm uppercase">Service</h3>
+                        <p class="text-lg font-semibold text-slate-800">3D Modeling & AR</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <i data-lucide="cloud" class="w-8 h-8 mb-2 text-orange-500"></i>
+                        <h3 class="font-bold text-slate-500 text-sm uppercase">Integration</h3>
+                        <p class="text-lg font-semibold text-slate-800">AWS Direct Upload</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <i data-luc
