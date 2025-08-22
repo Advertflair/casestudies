@@ -364,24 +364,8 @@
             });
         }
 
-        // Contact Form Handler
-        const contactForm = document.getElementById('contact-form');
-        const formContainer = document.getElementById('form-container');
-        const formMessage = document.getElementById('form-message');
-
-        contactForm.addEventListener('submit', function(event) {
-            event.preventDefault();
-
-            // The browser's built-in `required` attribute handles validation.
-            // If the form is valid, this event will fire.
-            
-            // On success, hide form and show message
-            formContainer.classList.add('hidden');
-            formMessage.classList.remove('hidden');
-            // Re-render icons in the success message if needed
-            lucide.createIcons();
-        });
+        
     </script>
-
+ <script src="form-handler.js"></script>
 </body>
 </html>
